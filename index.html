@@ -1,1063 +1,1451 @@
 <html>
-    <header>
+<header>
 
-    </header>
-    <body>
-        <div id="contenido" style="width: 97%; height: auto !important;">
+</header>
+
+<body>
+    <div id="contenido" style="width: 97%; height: auto !important;">
+        <p align="center"><strong><u>Test de Allport</u></strong></p>
+
+        <p>El <strong>test de Allport</strong> es una <strong>prueba psicométrica</strong> que mide los principios y
+            <strong>valores morales</strong> que rigen la conducta del individuo. La <strong>prueba de Allport</strong>
+            puede resultar de utilidad a las empresas cuando persiguen conocer algo más del candidato a un puesto, que
+            sus conocimientos o sus aptitudes en una materia específica. Esta prueba puede reportar mucha
+            <strong>información de cómo es la persona</strong>.</p>
+        <p>El <strong>test de Allport </strong>consta de dos partes. En la primera se muestran una serie de ítems con
+            los que se deberá marcar si se está de acuerdo o en desacuerdo. La segunda parte muestra cuatro opciones que
+            deberán jerarquizarse en función del mayor acuerdo, al mayor desacuerdo. A continuación presentamos más
+            detalladamente las instrucciones:</p>
+
+        <table width="90%" cellpadding="0" cellspacing="0" border="0" style="text-align:justify;">
+            <tbody>
+                <tr>
+                    <td style="padding-left:10;">
+                        <p align="center"><strong>Primera Parte:</strong></p>
+                        <p>En este bloque del test, usted encontrará una serie de afirmaciones, entre las cuales deberá
+                            repartir 3 puntos de la siguiente forma.</p>
+                        <ul type="disc">
+                            <li>Si está totalmente de acuerdo con la alternativa A, y totalmente en desacuerdo con la B,
+                                asignará 3 puntos a la casilla A y 0 puntos a la casilla B.</li>
+                            <li>Si está totalmente en desacuerdo con la alternativa A, y totalmente de acuerdo con la B,
+                                asignará 0 puntos a la casilla A y 3 puntos a la casilla B.</li>
+                            <li>Si está ligeramente más de acuerdo con la alternativa A que con la B, asignará 2 puntos
+                                a la A y 1 punto a la B.</li>
+                            <li>Si está ligeramente más de acuerdo con la alternativa B que con la A, Asignará 2 puntos
+                                a la B y 1 punto a la A.</li>
+                        </ul>
+
+                        * Para obtener las puntuaciones correctamente tiene que contestar todas las preguntas del test
+                        en el mismo orden en el que están formuladas.
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form id="result" style="height: auto !important;">
+
+            <table width="90%" border="0" cellspacing="10" cellpadding="0">
+                <tbody>
+                    <tr align="center">
+                        <td width="90%" valign="top">
+                            <p><strong> </strong></p>
+                        </td>
+                        <td width="40" valign="top">
+                            <p><strong>A</strong></p>
+                        </td>
+                        <td width="40" valign="top">
+                            <p><strong>-</strong></p>
+                        </td>
+                        <td width="40" valign="top">
+                            <p><strong>-</strong></p>
+                        </td>
+                        <td width="40" valign="top">
+                            <p><strong>B</strong></p>
+                        </td>
+                    </tr>
+
+                    <tr id="I1">
+                        <td width="90%" valign="top">
+                            <p>El principal objeto de la ciencia es describir la verdad y no darle una aplicación
+                                práctica <br>
+                                (A: Si, B: No)</p>
+                        </td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta1"
+                                onclick="ponercero(); agregarI(3,'R','S'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta1"
+                                onclick="ponercero();  agregarI(2,'R','S'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta1"
+                                onclick="ponercero();  agregarI(1,'R','S'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta1"
+                                onclick="ponercero();  agregarI(0,'R','S'); "></td>
+
+                    </tr>
+                    <tr id="I2">
+                        <td width="90%" valign="top">
+                            <p>La Biblia debe mirarse desde el punto de vista de la mitología y la literatura, pero no
+                                como una revelación espiritual <br>(A: Si, B: No)</p>
+                        </td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta2"
+                                onclick="agregarI(3,'T','Z'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta2"
+                                onclick=" agregarI(2,'T','Z'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta2"
+                                onclick="agregarI(1,'T','Z'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta2"
+                                onclick=" agregarI(0,'T','Z'); "></td>
+                    </tr>
+                    <tr id="I3">
+                        <td width="90%" valign="top">
+                            <p>¿A cual de los siguientes hombres cree que debe atribuírsele mayor mérito por su
+                                contribución al progreso de la humanidad? <br>(A: Aristóteles, B: Simón Bolívar)</p>
+                        </td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta3"
+                                onclick="agregarI(3,'R','T'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta3"
+                                onclick=" agregarI(2,'R','T'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta3"
+                                onclick="agregarI(1,'R','T'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta3"
+                                onclick=" agregarI(0,'R','T'); "></td>
+
+                    </tr>
+                    <tr id="I4">
+                        <td width="90%" valign="top">
+                            <p>Dando por hecho que usted tiene la habilidad necesaria, preferiría ser <br>(A: Banquero,
+                                B: Político)</p>
+                        </td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta4"
+                                onclick="agregarI(3,'S','Y'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta4"
+                                onclick=" agregarI(2,'S','Y'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta4"
+                                onclick="agregarI(1,'S','Y'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta4"
+                                onclick=" agregarI(3,'S','Y'); "></td>
+
+                    </tr>
+                    <tr id="I5">
+                        <td width="90%" valign="top">
+                            <p>¿Cree justificable que los grandes artistas como Beethoven, Wagner y Byron hayan sido
+                                egoístas e indiferentes a los sentimientos de otros? <br>(A: Si, B: No)</p>
+                        </td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta5"
+                                onclick="agregarI(3,'T','X'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta5"
+                                onclick=" agregarI(2,'T','X'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta5"
+                                onclick="agregarI(1,'T','X'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta5"
+                                onclick=" agregarI(0,'T','X'); "></td>
+                    </tr>
+                    <tr id="I6">
+                        <td width="90%" valign="top">
+                            <p>¿Cuál de estas dos disciplinas cree que tendrán en un futuro un mayor valor para la
+                                humanidad? <br>(A: Matemáticas, B: Teología)</p>
+                        </td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta6"
+                                onclick="agregarI(3,'R','Z'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta6"
+                                onclick=" agregarI(2,'R','Z'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta6"
+                                onclick="agregarI(1,'R','Z'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta6"
+                                onclick=" agregarI(0,'R','Z'); "></td>
+                    </tr>
+                    <tr id="I7">
+                        <td width="90%" valign="top">
+                            <p>¿Cuál considera usted que debe ser la función más importante de los dirigentes modernos?
+                                <br>(A: A) Inducir a la gente a obtener resultados eficientes, B: B) Inducir a la gente
+                                a interesarse por los Derechos Humanos)</p>
+                        </td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta7"
+                                onclick="agregarI(3,'S','X');"></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta7"
+                                onclick=" agregarI(2,'S','X');"></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta7"
+                                onclick="agregarI(1,'S','X');"></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta7"
+                                onclick=" agregarI(0,'S','X');"></td>
+                    </tr>
+                    <tr id="I8">
+                        <td width="90%" valign="top">
+                            <p>Cuando presencia una ceremonia pomposa (religiosa, académica) ¿qué le interesa más?
+                                <br>(A: El colorido y formalidad del acto, B: La influencia y la fuerza del grupo)</p>
+                        </td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta8"
+                                onclick="agregarI(3,'T','Y');"></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta8"
+                                onclick=" agregarI(2,'T','Y');"></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta8"
+                                onclick="agregarI(1,'T','Y');"></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta8"
+                                onclick="agregarI(0,'T','Y');"></td>
+                    </tr>
+
+                    <tr>
+                        <td align="center" width="40" valign="top" colspan="5"><input size="3" type="hidden" name="TI1"
+                                id="TI1">
+                            <input size="3" type="hidden" name="TI2" id="TI2">
+                            <input size="3" type="hidden" name="TI3" id="TI3">
+                            <input size="3" type="hidden" name="TI4" id="TI4">
+                            <input size="3" type="hidden" name="TI5" id="TI5">
+                            <input size="3" type="hidden" name="TI6" id="TI6">
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <br>
+            <br>
+
+            <table width="90%" border="0" cellspacing="10" cellpadding="0">
+                <tbody>
+                    <tr align="center">
+                        <td width="90%" valign="top">
+                            <p><strong> </strong></p>
+                        </td>
+                        <td width="40" valign="top">
+                            <p><strong>A</strong></p>
+                        </td>
+                        <td width="40" valign="top">
+                            <p><strong>-</strong></p>
+                        </td>
+                        <td width="40" valign="top">
+                            <p><strong>-</strong></p>
+                        </td>
+                        <td width="40" valign="top">
+                            <p><strong>B</strong></p>
+                        </td>
+
+                    </tr>
+                    <tr id="II1">
+                        <td width="90%" valign="top">
+                            <p>¿Cuáles de estos rasgos de carácter consideraría más deseables? <br>
+                                A) Los altos ideales y el respeto
+                                B) El desinterés y la condolencia</p>
+                        </td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta9"
+                                onclick="ponercero(); agregarII(3,'R','T'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta9"
+                                onclick="ponercero(); agregarII(2,'R','T'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta9"
+                                onclick="ponercero(); agregarI(1,'R','T'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta9"
+                                onclick="ponercero(); agregarI(0,'R','T'); "></td>
+                    </tr>
+                    <tr id="II2">
+                        <td width="90%" valign="top">
+                            <p>Si fuera catedrático universitario, preferiría dar clases de : <br>
+                                A) Literatura
+                                B) Física y Química
+                            </p>
+                        </td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta10"
+                                onclick="agregarII(3,'X','Z');"></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta10"
+                                onclick=" agregarII(2,'X','Z'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta10"
+                                onclick="agregarII(1,'X','Z'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta10"
+                                onclick=" agregarII(0,'X','Z'); "></td>
+                    </tr>
+                    <tr id="II3">
+                        <td width="90%" valign="top">
+                            <p>Si tuviera las siguientes noticias con encabezados del mismo tamaño, cual leería con más
+                                interés <br>A)Dignatarios de la Iglesia resuelven importante problema religioso
+                                B)Grandes mejoras en las condiciones de mercado
+                            </p>
+                        </td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta11"
+                                onclick="agregarII(3,'R','Y'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta11"
+                                onclick=" agregarII(2,'R','Y'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta11"
+                                onclick="agregarII(1,'R','Y'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta11"
+                                onclick=" agregarII(0,'R','Y'); "></td>
+                    </tr>
+                    <tr id="II4">
+                        <td width="90%" valign="top">
+                            <p>Si tuviera las siguientes noticias con encabezados del mismo tamaño, cual leería con más
+                                interés <br>
+                                A) La Suprema Corte anuncia su decisión
+                                B) Nueva teoría política es anunciado
+                            </p>
+                        </td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta12"
+                                onclick="agregarII(3,'S','Z'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta12"
+                                onclick=" agregarII(2,'S','Z'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta12"
+                                onclick="agregarII(1,'S','Z'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta12"
+                                onclick=" agregarII(0,'S','Z'); "></td>
+                    </tr>
+                    <tr id="II5">
+                        <td width="90%" valign="top">
+                            <p>¿Cuándo visita una catedral le impresiona más el sentido de reverencia que el aspecto
+                                arquitectónico? <br>(A: Si, B: No)</p>
+                        </td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta13"
+                                onclick="agregarII(3,'R','X'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta13"
+                                onclick=" agregarII(2,'R','X'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta13"
+                                onclick="agregarII(1,'R','X'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta13"
+                                onclick=" agregarII(0,'R','X'); "></td>
+                    </tr>
+                    <tr id="II6">
+                        <td width="90%" valign="top">
+                            <p>Suponiendo que tenga tiempo disponible, preferiría utilizarlo en: <br>A) Desarrollar tu
+                                habilidad favorita
+                                B) Hacer labor social
+                            </p>
+                        </td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta14"
+                                onclick="agregarII(3,'S','T'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta14"
+                                onclick=" agregarII(2,'S','T'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta14"
+                                onclick="agregarII(1,'S','T'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta14"
+                                onclick=" agregarII(0,'S','T'); "></td>
+                    </tr>
+                    <tr id="II7">
+                        <td width="90%" valign="top">
+                            <p>En una exposición le gusta más ir a lugares donde pueda ver <br>A) Nuevos productos
+                                industriales
+                                B) Aparatos científicos
+                            </p>
+                        </td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta15"
+                                onclick="agregarII(3,'Y','Z'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta15"
+                                onclick=" agregarII(2,'Y','Z'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta15"
+                                onclick="agregarII(1,'Y','Z'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta16"
+                                onclick=" agregarII(0,'Y','Z'); "></td>
+                    </tr>
+                    <tr id="II8">
+                        <td width="90%" valign="top">
+                            <p>Si tuviera la oportunidad y si ninguna de estas actividades existieran donde usted vive,
+                                qué le gustaría fundar: <br>A)Una sociedad de debates sobre problemas nacionales
+                                B) Una orquesta de música clásica.
+                            </p>
+                        </td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta17"
+                                onclick="agregarII(3,'S','X'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta17"
+                                onclick=" agregarII(2,'S','X'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta17"
+                                onclick="agregarII(1,'S','X'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="pregunta17"
+                                onclick=" agregarII(0,'S','X'); "></td>
+                    </tr>
+
+                    <tr>
+                        <td align="center" width="40" valign="top" colspan="5"><input size="3" type="hidden" name="TII1"
+                                id="TII1">
+                            <input size="3" type="hidden" name="TII2" id="TII2">
+                            <input size="3" type="hidden" name="TII3" id="TII3">
+                            <input size="3" type="hidden" name="TII4" id="TII4">
+                            <input size="3" type="hidden" name="TII5" id="TII5">
+                            <input size="3" type="hidden" name="TII6" id="TII6">
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <br>
+            <br>
+
+            <table width="90%" border="0" cellspacing="10" cellpadding="0">
+                <tbody>
+                    <tr align="center">
+                        <td width="90%" valign="top">
+                            <p><strong> </strong></p>
+                        </td>
+                        <td width="40" valign="top">
+                            <p><strong>A</strong></p>
+                        </td>
+                        <td width="40" valign="top">
+                            <p><strong>-</strong></p>
+                        </td>
+                        <td width="40" valign="top">
+                            <p><strong>-</strong></p>
+                        </td>
+                        <td width="40" valign="top">
+                            <p><strong>B</strong></p>
+                        </td>
+
+                    </tr>
+                    <tr id="III1">
+                        <td width="90%" valign="top">
+                            <p>La finalidad de las Iglesias en la actualidad debería ser: <br>
+                                A)Exaltar las tendencias altruistas y caritativas
+                                B)Fomentar el recogimiento espiritual y la comunicación con Dios
+                            </p>
+                        </td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII1"
+                                onclick="ponercero(); agregarIII(3,'S','Y'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII1"
+                                onclick="ponercero();  agregarIII(2,'S','Y'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII1"
+                                onclick="ponercero(); agregarIII(1,'S','Y'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII1"
+                                onclick="ponercero();  agregarIII(0,'S','Y'); "></td>
+                    </tr>
+                    <tr id="III2">
+                        <td width="90%" valign="top">
+                            <p>Si tuviera que pasar un tiempo solo en una sala de espera y hubiera dos revistas, cual
+                                escogería <br>
+                                A) Seminario de estudios científicos
+                                B) Arte y Decoración
+
+                            </p>
+                        </td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII2"
+                                onclick="agregarIII(3,'X','Z'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII2"
+                                onclick=" agregarIII(2,'X','Z'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII2"
+                                onclick="agregarIII(1,'X','Z'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII2"
+                                onclick=" agregarIII(0,'X','Z'); "></td>
+                    </tr>
+                    <tr id="III3">
+                        <td width="90%" valign="top">
+                            <p>Preferiría usted escuchar una serie de conferencias sobre <br>A)Comparación de méritos en
+                                los sistemas de gobierno de España y México
+                                B)Comparación del desarrollo de las grandes creencias religiosas
+
+                            </p>
+                        </td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII3"
+                                onclick="agregarIII(3,'T','Y'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII3"
+                                onclick=" agregarIII(2,'T','Y'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII3"
+                                onclick="agregarIII(1,'T','Y'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII3"
+                                onclick=" agregarIII(0,'T','Y'); "></td>
+                    </tr>
+                    <tr id="III4">
+                        <td width="90%" valign="top">
+                            <p>¿Cuál de las siguientes funciones de la educación formal considera más importante? <br>
+                                A)La preparación que da en los aspectos de utilidad práctica y recompensa monetaria
+                                B) La preparación que da para participar en las actividades de ayuda a la comunidad
+
+                            </p>
+                        </td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII4"
+                                onclick="agregarIII(3,'R','S'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII4"
+                                onclick=" agregarIII(2,'R','S'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII4"
+                                onclick="agregarIII(1,'R','S'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII4"
+                                onclick=" agregarIII(0,'R','S'); "></td>
+                    </tr>
+                    <tr id="III5">
+                        <td width="90%" valign="top">
+                            <p>¿Tiene usted más interés en leer relatos sobre la vida de hombres como?<br>
+                                A) Alejandro Magno, Julio César y Carlo Magno
+                                B)Aristóteles, Sócrates y Kant
+                            </p>
+                        </td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII5"
+                                onclick="agregarIII(3,'T','X'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII5"
+                                onclick=" agregarIII(2,'T','X'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII5"
+                                onclick="agregarIII(1,'T','X'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII5"
+                                onclick=" agregarIII(0,'T','X'); "></td>
+                    </tr>
+                    <tr id="III6">
+                        <td width="90%" valign="top">
+                            <p>Nuestro actual desarrollo industrial y científico es muestra de mayor grado de
+                                civilización que el alcanzado por cualquiera otra sociedad, por ejemplo, los griegos<br>
+                                A) Sí B) No
+                            </p>
+                        </td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII6"
+                                onclick="agregarIII(3,'R','Z'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII6"
+                                onclick=" agregarIII(2,'R','Z'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII6"
+                                onclick="agregarIII(1,'R','Z'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII6"
+                                onclick=" agregarIII(0,'R','Z'); "></td>
+                    </tr>
+                    <tr id="III7">
+                        <td width="90%" valign="top">
+                            <p>Si estuviera empleado en una organización y considerando que los sueldos fueran iguales,
+                                preferiría usted ser: <br>A) Consejero de empleados
+                                B) Trabajador Administrativo
+
+                            </p>
+                        </td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII7"
+                                onclick="agregarIII(3,'S','T'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII7"
+                                onclick=" agregarIII(2,'S','T'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII7"
+                                onclick="agregarIII(1,'S','T'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII7"
+                                onclick=" agregarIII(0,'S','T'); "></td>
+                    </tr>
+
+                    <tr>
+                        <td align="center" width="40" valign="top" colspan="5"><input size="3" type="hidden"
+                                name="TIII1" id="TIII1">
+                            <input size="3" type="hidden" name="TIII2" id="TIII2">
+                            <input size="3" type="hidden" name="TIII3" id="TIII3">
+                            <input size="3" type="hidden" name="TIII4" id="TIII4">
+                            <input size="3" type="hidden" name="TIII5" id="TIII5">
+                            <input size="3" type="hidden" name="TIII6" id="TIII6">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <br>
+
+            <table width="90%" border="0" cellspacing="10" cellpadding="0">
+                <tbody>
+                    <tr align="center">
+                        <td width="90%" valign="top">
+                            <p><strong> </strong></p>
+                        </td>
+                        <td width="40" valign="top">
+                            <p><strong>A</strong></p>
+                        </td>
+                        <td width="40" valign="top">
+                            <p><strong>-</strong></p>
+                        </td>
+                        <td width="40" valign="top">
+                            <p><strong>-</strong></p>
+                        </td>
+                        <td width="40" valign="top">
+                            <p><strong>B</strong></p>
+                        </td>
+
+                    </tr>
+                    <tr id="IV1">
+                        <td width="90%" valign="top">
+                            <p>Cual de estos dos libros escogería<br>
+                                A) Historia de la religión
+                                B) Historia del desarrollo industrial
+
+                            </p>
+                        </td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV1"
+                                onclick="ponercero(); agregarIV(3,'T','X'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV1"
+                                onclick="ponercero();  agregarIV(2,'T','X'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV1"
+                                onclick="ponercero(); agregarIV(1,'T','X'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV1"
+                                onclick="ponercero();  agregarIV(0,'T','X'); "></td>
+                    </tr>
+                    <tr id="IV2">
+                        <td width="90%" valign="top">
+                            <p>Qué sería mejor para la sociedad moderna<br>
+                                A) Mayor preocupación por los derechos y bienestar de los ciudadanos
+                                B) Mayor conocimiento de las leyes fundamentales del comportamiento humano
 
 
+                            </p>
+                        </td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV2"
+                                onclick="agregarIV(3,'R','S'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV2"
+                                onclick=" agregarIV(2,'R','S'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV2"
+                                onclick="agregarIV(1,'R','S'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV2"
+                                onclick=" agregarIV(0,'R','S'); "></td>
+                    </tr>
+                    <tr id="IV3">
+                        <td width="90%" valign="top">
+                            <p>Según sus deseos, en cual de estas opciones preferiría utilizar su influencia <br>
+                                A)Elevar su nivel de vida
+                                B) Influenciar la opinión pública
 
 
+                            </p>
+                        </td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV3"
+                                onclick="agregarIV(3,'X','Z'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV3"
+                                onclick=" agregarIV(2,'X','Z'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV3"
+                                onclick="agregarIV(1,'X','Z'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV3"
+                                onclick=" agregarIV(0,'X','Z'); "></td>
+                    </tr>
+                    <tr id="IV4">
+                        <td width="90%" valign="top">
+                            <p>Qué tema prefiere para elegir una conferencia<br>
+                                A)El progreso de los servicios sociales en su ciudad
+                                B) Pintores contemporáneos.
 
-    <p align="center"><strong><u>Test de Allport</u></strong></p>
-    
-    <p>El <strong>test de Allport</strong> es una <strong>prueba psicométrica</strong> que mide los  principios y <strong>valores morales</strong> que  rigen la conducta del individuo. La <strong>prueba  de Allport</strong> puede resultar de utilidad a las empresas cuando persiguen  conocer algo más del candidato a un puesto, que sus conocimientos o sus  aptitudes en una materia específica. Esta prueba puede reportar mucha <strong>información de cómo es la persona</strong>.</p>
-    <p>El <strong>test de Allport </strong>consta de dos partes.  En la primera se muestran una serie de ítems con los que se deberá marcar si se  está de acuerdo o en desacuerdo. La segunda parte muestra cuatro opciones que  deberán jerarquizarse en función del mayor acuerdo, al mayor desacuerdo. A continuación  presentamos más detalladamente las instrucciones:</p>
-    
-      
-    
-    <table width="90%" cellpadding="0" cellspacing="0" border="0" style="text-align:justify;">
-    <tbody><tr>
 
-    <td style="padding-left:10;">  
-      <p align="center"><strong>Primera Parte:</strong></p>
-    <p>En este bloque  del test, usted encontrará una serie de afirmaciones, entre las cuales deberá  repartir 3 puntos de la siguiente forma.</p>
-    <ul type="disc">
-      <li>Si está totalmente de acuerdo con la alternativa A,       y totalmente en desacuerdo con la B, asignará 3 puntos a la casilla A y 0       puntos a la casilla B.</li>
-      <li>Si está totalmente en desacuerdo con la alternativa       A, y totalmente de acuerdo con la B, asignará 0 puntos a la casilla A y 3       puntos a la casilla B.</li>
-      <li>Si está ligeramente más de acuerdo con la       alternativa A que con la B, asignará 2 puntos a la A y 1 punto a la B.</li>
-      <li>Si está ligeramente más de acuerdo con la       alternativa B que con la A, Asignará 2 puntos a la B y 1 punto a la A.</li>
-    </ul>
-     
-     * Para obtener las puntuaciones correctamente tiene que contestar todas las preguntas del test en el mismo orden en el que están formuladas.
-     
-     </td>
-    </tr>
-    </tbody></table>
-    
-    
-    <form id="result" style="height: auto !important;">
-    
-    <table width="90%" border="0" cellspacing="10" cellpadding="0">
-        <tbody><tr align="center">
-          <td width="90%" valign="top"><p><strong> </strong></p></td>
-          <td width="40" valign="top"><p><strong>A</strong></p></td>
-          <td width="40" valign="top"><p><strong>-</strong></p></td>
-          <td width="40" valign="top"><p><strong>-</strong></p></td>   
-          <td width="40" valign="top"><p><strong>B</strong></p></td>
-        </tr>
-        <tr id="I1">
-          <td width="90%" valign="top"><p>El principal objeto de la ciencia es describir la verdad y no darle una aplicación práctica <br>
-    (A: Si, B: No)</p></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta1" onclick="ponercero(); agregarI(3,'R','S'); I1.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta1" onclick="ponercero();  agregarI(2,'R','S'); I1.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta1" onclick="ponercero();  agregarI(1,'R','S'); I1.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta1" onclick="ponercero();  agregarI(0,'R','S'); I1.style.display='none';"></td>
-    
-        </tr>
-        <tr id="I2">
-          <td width="90%" valign="top"><p>La Biblia debe mirarse desde el punto de vista de la mitología y la literatura, pero no como una revelación espiritual <br>(A: Si, B: No)</p></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta2" onclick="agregarI(3,'T','Z'); I2.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta2" onclick=" agregarI(2,'T','Z'); I2.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta2" onclick="agregarI(1,'T','Z'); I2.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta2" onclick=" agregarI(0,'T','Z'); I2.style.display='none';"></td>
-        </tr>
-        <tr id="I3">
-          <td width="90%" valign="top"><p>¿A cual de los siguientes hombres cree que debe atribuírsele mayor mérito por su contribución al progreso de la humanidad? <br>(A: Aristóteles, B: Simón Bolívar)</p></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta3" onclick="agregarI(3,'R','T'); I3.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta3" onclick=" agregarI(2,'R','T'); I3.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta3" onclick="agregarI(1,'R','T'); I3.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta3" onclick=" agregarI(0,'R','T'); I3.style.display='none';"></td>
-          
-        </tr>
-        <tr id="I4">
-          <td width="90%" valign="top"><p>Dando por hecho que usted tiene la habilidad necesaria, preferiría ser <br>(A: Banquero, B: Político)</p></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta4" onclick="agregarI(3,'S','Y'); I4.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta4" onclick=" agregarI(2,'S','Y'); I4.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta4" onclick="agregarI(1,'S','Y'); I4.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta4" onclick=" agregarI(3,'S','Y'); I4.style.display='none';"></td>      
-          
-        </tr>
-        <tr id="I5">
-          <td width="90%" valign="top"><p>¿Cree justificable que los grandes artistas como Beethoven, Wagner y Byron hayan sido egoístas e indiferentes a los sentimientos de otros? <br>(A: Si, B: No)</p></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta5" onclick="agregarI(3,'T','X'); I5.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta5" onclick=" agregarI(2,'T','X'); I5.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta5" onclick="agregarI(1,'T','X'); I5.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta5" onclick=" agregarI(0,'T','X'); I5.style.display='none';"></td>      
-        </tr>
-        <tr id="I6">
-          <td width="90%" valign="top"><p>¿Cuál de estas dos disciplinas cree que tendrán en un futuro un mayor valor para la humanidad? <br>(A: Matemáticas, B: Teología)</p></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta6" onclick="agregarI(3,'R','Z'); I6.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta6" onclick=" agregarI(2,'R','Z'); I6.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta6" onclick="agregarI(1,'R','Z'); I6.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta6" onclick=" agregarI(0,'R','Z'); I6.style.display='none';"></td>      
-        </tr>
-        <tr id="I7">
-          <td width="90%" valign="top"><p>¿Cuál considera usted que debe ser la función más importante de los dirigentes modernos? <br>(A: A)	Inducir a la gente a obtener resultados eficientes, B: B)	Inducir a la gente a interesarse por los Derechos Humanos)</p></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta7" onclick="agregarI(3,'S','X'); I7.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta7" onclick=" agregarI(2,'S','X'); I7.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta7" onclick="agregarI(1,'S','X'); I7.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta7" onclick=" agregarI(0,'S','X'); I7.style.display='none';"></td>
-        </tr>
-        <tr id="I8">
-          <td width="90%" valign="top"><p>Cuando presencia una ceremonia pomposa (religiosa, académica) ¿qué le interesa más? <br>(A: El colorido y formalidad del acto, B: La influencia y la fuerza del grupo)</p></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta8" onclick="agregarI(3,'T','Y'); I8.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta8" onclick=" agregarI(2,'T','Y'); I8.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta8" onclick="agregarI(1,'T','Y'); I8.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta8" onclick="agregarI(0,'T','Y'); I8.style.display='none';"></td>      
-        </tr>
-       
-        <tr>
-          <td align="center" width="40" valign="top" colspan="5"><input size="3" type="hidden" name="TI1" id="TI1">
-          <input size="3" type="hidden" name="TI2" id="TI2">
-          <input size="3" type="hidden" name="TI3" id="TI3">
-         <input size="3" type="hidden" name="TI4" id="TI4">	
-          <input size="3" type="hidden" name="TI5" id="TI5">  
-          <input size="3" type="hidden" name="TI6" id="TI6">            
-        </td></tr>
-    
-    </tbody></table>
-      <br>
-    <br>
-    
-    
-    
-    
-    
-    <table width="90%" border="0" cellspacing="10" cellpadding="0">
-        <tbody><tr align="center">
-          <td width="90%" valign="top"><p><strong> </strong></p></td>
-          <td width="40" valign="top"><p><strong>A</strong></p></td>
-          <td width="40" valign="top"><p><strong>-</strong></p></td>
-          <td width="40" valign="top"><p><strong>-</strong></p></td>   
-          <td width="40" valign="top"><p><strong>B</strong></p></td>
-    
-        </tr>
-        <tr id="II1">
-          <td width="90%" valign="top"><p>¿Cuáles de estos rasgos de carácter consideraría más deseables? <br>
-    A)	Los altos ideales y el respeto
-    B)	El desinterés y la condolencia</p></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta1II" onclick="ponercero(); agregarII(3,'R','T'); II1.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta1II" onclick="ponercero(); agregarII(2,'R','T'); II1.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta1II" onclick="ponercero(); agregarI(1,'R','T'); II1.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta1II" onclick="ponercero(); agregarI(0,'R','T'); II1.style.display='none';"></td>      
-        </tr>
-        <tr id="II2">
-          <td width="90%" valign="top"><p>Si fuera catedrático universitario, preferiría dar clases de : <br>
-          A)	Literatura
-    B)	Física y Química
-    </p></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta2II" onclick="agregarII(3,'X','Z'); II2.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta2II" onclick=" agregarII(2,'X','Z'); II2.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta2II" onclick="agregarII(1,'X','Z'); II2.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta2II" onclick=" agregarII(0,'X','Z'); II2.style.display='none';"></td>      
-        </tr>
-        <tr id="II3">
-          <td width="90%" valign="top"><p>Si tuviera las siguientes noticias con encabezados del mismo tamaño, cual leería con más interés		 <br>A)Dignatarios de la Iglesia resuelven importante problema religioso
-    B)Grandes mejoras en las condiciones de mercado				
-    </p></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta3II" onclick="agregarII(3,'R','Y'); II3.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta3II" onclick=" agregarII(2,'R','Y'); II3.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta3II" onclick="agregarII(1,'R','Y'); II3.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta3II" onclick=" agregarII(0,'R','Y'); II3.style.display='none';"></td>      
-        </tr>
-        <tr id="II4">
-          <td width="90%" valign="top"><p>Si tuviera las siguientes noticias con encabezados del mismo tamaño, cual leería con más interés <br>
-          A) La Suprema Corte anuncia su decisión
-    B) Nueva teoría política es anunciado
-    </p></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta4II" onclick="agregarII(3,'S','Z'); II4.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta4II" onclick=" agregarII(2,'S','Z'); II4.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta4II" onclick="agregarII(1,'S','Z'); II4.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta4II" onclick=" agregarII(0,'S','Z'); II4.style.display='none';"></td>      
-        </tr>
-        <tr id="II5">
-          <td width="90%" valign="top"><p>¿Cuándo visita una catedral le impresiona más el sentido de reverencia que el aspecto arquitectónico? <br>(A: Si, B: No)</p></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta5II" onclick="agregarII(3,'R','X'); II5.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta5II" onclick=" agregarII(2,'R','X'); II5.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta5II" onclick="agregarII(1,'R','X'); II5.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta5II" onclick=" agregarII(0,'R','X'); II5.style.display='none';"></td>      
-        </tr>
-        <tr id="II6">
-          <td width="90%" valign="top"><p>Suponiendo que tenga tiempo disponible, preferiría utilizarlo en: <br>A)	Desarrollar tu habilidad favorita
-    B)	Hacer labor social
-    </p></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta6II" onclick="agregarII(3,'S','T'); II6.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta6II" onclick=" agregarII(2,'S','T'); II6.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta6II" onclick="agregarII(1,'S','T'); II6.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta6II" onclick=" agregarII(0,'S','T'); II6.style.display='none';"></td>      
-        </tr>
-        <tr id="II7">
-          <td width="90%" valign="top"><p>En una exposición le gusta más ir a lugares donde pueda ver <br>A)	Nuevos productos industriales
-    B) Aparatos científicos
-    </p></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta7II" onclick="agregarII(3,'Y','Z'); II7.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta7II" onclick=" agregarII(2,'Y','Z'); II7.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta7II" onclick="agregarII(1,'Y','Z'); II7.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta7II" onclick=" agregarII(0,'Y','Z'); II7.style.display='none';"></td>      
-        </tr>
-        <tr id="II8">
-          <td width="90%" valign="top"><p>Si tuviera la oportunidad y si ninguna de estas actividades existieran donde usted vive, qué le gustaría fundar: <br>A)Una sociedad de debates sobre problemas nacionales
-    B) Una orquesta de música clásica.
-    </p></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta8II" onclick="agregarII(3,'S','X'); II8.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta8II" onclick=" agregarII(2,'S','X'); II8.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta8II" onclick="agregarII(1,'S','X'); II8.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="pregunta8II" onclick=" agregarII(0,'S','X'); II8.style.display='none';"></td>      
-        </tr>
-       
-        <tr>
-          <td align="center" width="40" valign="top" colspan="5"><input size="3" type="hidden" name="TII1" id="TII1">
-         <input size="3" type="hidden" name="TII2" id="TII2">
-         <input size="3" type="hidden" name="TII3" id="TII3">
-          <input size="3" type="hidden" name="TII4" id="TII4">	
-          <input size="3" type="hidden" name="TII5" id="TII5">   
-          <input size="3" type="hidden" name="TII6" id="TII6"></td>   
-        </tr>
-    
-    </tbody></table>
-      <br>
-    <br>
-    
-      
-      
-      <table width="90%" border="0" cellspacing="10" cellpadding="0">
-        <tbody><tr align="center">
-          <td width="90%" valign="top"><p><strong> </strong></p></td>
-          <td width="40" valign="top"><p><strong>A</strong></p></td>
-          <td width="40" valign="top"><p><strong>-</strong></p></td>
-          <td width="40" valign="top"><p><strong>-</strong></p></td>   
-          <td width="40" valign="top"><p><strong>B</strong></p></td>
-    
-        </tr>
-        <tr id="III1">
-          <td width="90%" valign="top"><p>La finalidad de las Iglesias en la actualidad debería ser: <br>
-    A)Exaltar las tendencias altruistas y caritativas
-    B)Fomentar el recogimiento espiritual y la comunicación con Dios
-    </p></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII1" onclick="ponercero(); agregarIII(3,'S','Y'); III1.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII1" onclick="ponercero();  agregarIII(2,'S','Y'); III1.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII1" onclick="ponercero(); agregarIII(1,'S','Y'); III1.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII1" onclick="ponercero();  agregarIII(0,'S','Y'); III1.style.display='none';"></td>      
-        </tr>
-        <tr id="III2">
-          <td width="90%" valign="top"><p>Si tuviera que pasar un tiempo solo en una sala de espera y hubiera dos revistas, cual escogería <br>
-    A)	Seminario de estudios científicos
-    B)	Arte y Decoración
-    
-    </p></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII2" onclick="agregarIII(3,'X','Z'); III2.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII2" onclick=" agregarIII(2,'X','Z'); III2.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII2" onclick="agregarIII(1,'X','Z'); III2.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII2" onclick=" agregarIII(0,'X','Z'); III2.style.display='none';"></td>      
-        </tr>
-        <tr id="III3">
-          <td width="90%" valign="top"><p>Preferiría usted escuchar una serie de conferencias sobre	 <br>A)Comparación de méritos en los sistemas de gobierno de España y México
-    B)Comparación del desarrollo de las grandes creencias religiosas
-    
-    </p></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII3" onclick="agregarIII(3,'T','Y'); III3.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII3" onclick=" agregarIII(2,'T','Y'); III3.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII3" onclick="agregarIII(1,'T','Y'); III3.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII3" onclick=" agregarIII(0,'T','Y'); III3.style.display='none';"></td>      
-        </tr>
-        <tr id="III4">
-          <td width="90%" valign="top"><p>¿Cuál de las siguientes funciones de la educación formal considera más importante? <br>
-         A)La preparación que da en los aspectos de utilidad práctica y recompensa monetaria
-    B) La preparación que da para participar en las actividades de ayuda a la comunidad
-    
-    </p></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII4" onclick="agregarIII(3,'R','S'); III4.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII4" onclick=" agregarIII(2,'R','S'); III4.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII4" onclick="agregarIII(1,'R','S'); III4.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII4" onclick=" agregarIII(0,'R','S'); III4.style.display='none';"></td>      
-        </tr>
-        <tr id="III5">
-          <td width="90%" valign="top"><p>¿Tiene usted más interés en leer relatos sobre la vida de hombres como?<br>
-          A)	Alejandro Magno, Julio César y Carlo Magno
-        B)Aristóteles, Sócrates y Kant
-    </p></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII5" onclick="agregarIII(3,'T','X'); III5.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII5" onclick=" agregarIII(2,'T','X'); III5.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII5" onclick="agregarIII(1,'T','X'); III5.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII5" onclick=" agregarIII(0,'T','X'); III5.style.display='none';"></td>      
-        </tr>
-        <tr id="III6">
-          <td width="90%" valign="top"><p>Nuestro actual desarrollo industrial y científico es muestra de mayor grado de civilización que el alcanzado por cualquiera otra sociedad, por ejemplo, los griegos<br>
-          A) Sí                    B) No
-    </p></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII6" onclick="agregarIII(3,'R','Z'); III6.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII6" onclick=" agregarIII(2,'R','Z'); III6.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII6" onclick="agregarIII(1,'R','Z'); III6.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII6" onclick=" agregarIII(0,'R','Z'); III6.style.display='none';"></td>      
-        </tr>
-        <tr id="III7">
-          <td width="90%" valign="top"><p>Si estuviera empleado en una organización y considerando que los sueldos fueran iguales,  preferiría usted ser: <br>A)	Consejero de empleados
-    B)	Trabajador Administrativo
-    
-    </p></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII7" onclick="agregarIII(3,'S','T'); III7.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII7" onclick=" agregarIII(2,'S','T'); III7.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII7" onclick="agregarIII(1,'S','T'); III7.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIII7" onclick=" agregarIII(0,'S','T'); III7.style.display='none';"></td>      
-        </tr>
-    
-       
-        <tr>
-          <td align="center" width="40" valign="top" colspan="5"><input size="3" type="hidden" name="TIII1" id="TIII1">
-          <input size="3" type="hidden" name="TIII2" id="TIII2">
-          <input size="3" type="hidden" name="TIII3" id="TIII3">
-         <input size="3" type="hidden" name="TIII4" id="TIII4">	
-         <input size="3" type="hidden" name="TIII5" id="TIII5">   
-          <input size="3" type="hidden" name="TIII6" id="TIII6"></td>  
-        </tr>
-    </tbody></table>
-      <br>
-    <br>
-      
-      
-      
-      
-       <table width="90%" border="0" cellspacing="10" cellpadding="0">
-        <tbody><tr align="center">
-          <td width="90%" valign="top"><p><strong> </strong></p></td>
-          <td width="40" valign="top"><p><strong>A</strong></p></td>
-          <td width="40" valign="top"><p><strong>-</strong></p></td>
-          <td width="40" valign="top"><p><strong>-</strong></p></td>   
-          <td width="40" valign="top"><p><strong>B</strong></p></td>
-    
-        </tr>
-        <tr id="IV1">
-          <td width="90%" valign="top"><p>Cual de estos dos libros escogería<br>
-    A)	Historia de la religión 
-    B)	Historia del desarrollo industrial
-    
-    </p></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV1" onclick="ponercero(); agregarIV(3,'T','X'); IV1.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV1" onclick="ponercero();  agregarIV(2,'T','X'); IV1.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV1" onclick="ponercero(); agregarIV(1,'T','X'); IV1.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV1" onclick="ponercero();  agregarIV(0,'T','X'); IV1.style.display='none';"></td>      
-        </tr>
-        <tr id="IV2">
-          <td width="90%" valign="top"><p>Qué sería mejor para la sociedad moderna<br>
-    A)	Mayor preocupación por los derechos y bienestar de los ciudadanos
-    B)	Mayor conocimiento de las leyes fundamentales del comportamiento humano
-    
-    
-    </p></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV2" onclick="agregarIV(3,'R','S'); IV2.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV2" onclick=" agregarIV(2,'R','S'); IV2.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV2" onclick="agregarIV(1,'R','S'); IV2.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV2" onclick=" agregarIV(0,'R','S'); IV2.style.display='none';"></td>      
-        </tr>
-        <tr id="IV3">
-          <td width="90%" valign="top"><p>Según sus deseos, en cual de estas opciones preferiría utilizar su influencia	 <br>
-    A)Elevar su nivel de vida
-    B) Influenciar la opinión pública
-    
-    
-    </p></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV3" onclick="agregarIV(3,'X','Z'); IV3.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV3" onclick=" agregarIV(2,'X','Z'); IV3.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV3" onclick="agregarIV(1,'X','Z'); IV3.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV3" onclick=" agregarIV(0,'X','Z'); IV3.style.display='none';"></td>      
-        </tr>
-        <tr id="IV4">
-          <td width="90%" valign="top"><p>Qué tema prefiere para elegir una conferencia<br>
-        A)El progreso de los servicios sociales en su ciudad
-    B) Pintores contemporáneos. 
-    
-    
-    </p></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV4" onclick="agregarIV(3,'R','Y'); IV4.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV4" onclick=" agregarIV(2,'R','Y'); IV4.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV4" onclick="agregarIV(1,'R','Y'); IV4.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV4" onclick=" agregarIV(0,'R','Y'); IV4.style.display='none';"></td>      
-        </tr>
-        <tr id="IV5">
-          <td width="90%" valign="top"><p>La evidencia acumulada hasta ahora parece
-    demostrar que el universo se ha desarrollado
-    hasta su elevado estado actual de acuerdo con
-    leyes naturales de la manera que no sería
-    necesario recurrir a una causa primera, propósito
-    cósmico o divinidad para explicarlos:
-    
-    <br>
-          A)Estoy de acuerdo   B)Estoy en desacuerdo
-    </p></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV5" onclick="agregarIV(3,'S','T'); IV5.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV5" onclick=" agregarIV(2,'S','T'); IV5.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV5" onclick="agregarIV(1,'S','T'); IV5.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV5" onclick=" agregarIV(0,'S','T'); IV5.style.display='none';"></td>      
-        </tr>
-        <tr id="IV6">
-          <td width="90%" valign="top"><p>En un periódico local que leería usted primero<br>
-       A)La compraventa de casas
-    B)La programación de galerías de arte
-    
-    
-    </p></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV6" onclick="agregarIV(3,'X','Y'); IV6.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaVI6" onclick=" agregarIV(2,'X','Y'); IV6.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV6" onclick="agregarIV(1,'X','Y'); IV6.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaVI6" onclick=" agregarIV(0,'X','Y'); IV6.style.display='none';"></td>      
-        </tr>
-        <tr id="IV7">
-          <td width="90%" valign="top"><p>Qué consideraría usted más importante en la educación de sus hijos <br>
-    A)	La religión
-    B)La educación física
-    
-    
-    </p></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV7" onclick="agregarIV(3,'T','Z'); IV7.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV7" onclick=" agregarIV(2,'T','Z'); IV7.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV7" onclick="agregarIV(1,'T','Z'); IV7.style.display='none';"></td>
-          <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV7" onclick=" agregarIV(0,'T','Z'); IV7.style.display='none';"></td>      
-        </tr>
-    
-       
-        <tr>
-          <td align="center" width="40" valign="top" colspan="5"><input size="3" type="hidden" name="TIV1" id="TIV1">
-          <input size="3" type="hidden" name="TIV2" id="TIV2">
-          <input size="3" type="hidden" name="TIV3" id="TIV3">
-          <input size="3" type="hidden" name="TIV4" id="TIV4">
-          <input size="3" type="hidden" name="TIV5" id="TIV5">
-          <input size="3" type="hidden" name="TIV6" id="TIV6"></td> 
-        </tr>
-    </tbody></table>
-    
-      
-      <p align="center"><strong>Segunda Parte</strong></p>
-    <p>Cada uno de  los siguientes apartados está compuesto por 4 posibles alternativas. Usted  deberá puntuar cada una de las alternativas otorgándole valor 4, a la  contestación que pinche y con la que esté más de acuerdo o prefiere en primer lugar, 3,2,  con las intermedias y 1 la última que pinche y con la que no sea de su prioridad .</p>
-    
-     
-     
-     
-     
-     
-     <table width="90%" border="0" cellspacing="10" cellpadding="0">
-        <tbody><tr id="B2I1">
-          <td width="90%" valign="top"><p>Le parece a usted que un buen gobierno debe preocuparse más por<br>
-    <input type="radio" name="B2pregunta1" onclick="B2agregarI('Z'); this.disabled=true;"> A)	Dar ayuda a pobres, enfermos y ancianos <br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarI('S'); this.disabled=true;"> B)	Desarrollar la industria y el comercio<br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarI('T'); this.disabled=true;"> C)	Introducir los más elevados principios de ética y diplomacia en su política<br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarI('R'); this.disabled=true;"> D)	Colocar a la nación en una posición de prestigio
-    </p></td>
-    </tr>
-    
-        <tr id="B2I2">
-          <td width="90%" valign="top"><p>En su opinión cómo debería utilizar un hombre de negocios que trabaja toda la semana su domingo<br>
-    <input type="radio" name="B2pregunta1" onclick="B2agregarI('Z'); this.disabled=true;">A)	Leyendo libros serios para elevar su nivel cultural <br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarI('R'); this.disabled=true;"> B)	Tratando de ganar jugando al tenis o en carreras<br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarI('S'); this.disabled=true;">C)	Concurriendo a escuchar conciertos sinfónicos<br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarI('X'); this.disabled=true;">D)	Concurriendo a escuchar sermones religiosos de gran trascendencia
-    </p></td>
-    </tr>
-    
-        <tr id="B2I3">
-          <td width="90%" valign="top"><p>Si pudiera alterar el sistema de enseñanza de su comunidad, trataría usted de :<br>
-    <input type="radio" name="B2pregunta1" onclick="B2agregarI('S'); this.disabled=true;">A)	Darle mayor importancia al estudio de las bellas artes <br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarI('Z'); this.disabled=true;">B)	Incrementar el interés por el estudio de los problemas sociales<br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarI('Y'); this.disabled=true;">C)	Dotar de mayor número de aparatos a los laboratorios<br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarI('T'); this.disabled=true;">D)	Aumentar el valor práctico de la enseñanza
-    </p></td>
-    </tr>
-    
-    
-    
-    
-        <tr id="B2I4">
-          <td width="90%" valign="top"><p>En amigos de su propio sexo prefiere usted uno que:<br>
-    <input type="radio" name="B2pregunta1" onclick="B2agregarI('X'); this.disabled=true;">A)	Sea eficiente, trabajador y tenga manera práctica de pensar <br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarI('Y'); this.disabled=true;"> B)	Se interese seriamente en pensar a cerca de su actitud hacia la vida<br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarI('R'); this.disabled=true;">C)	Posea cualidades como líder y organizador<br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarI('S'); this.disabled=true;">D)	Demuestre sensibilidad artística y sentimental
-    </p></td>
-    </tr>
-     
-    
-        <tr id="B2I5">
-          <td width="90%" valign="top"><p>Si viviera en una ciudad pequeña y tuviera más ingresos de los necesarios para cubrir sus necesidades, preferiría:<br>
-    <input type="radio" name="B2pregunta1" onclick="B2agregarI('T'); this.disabled=true;">A)	Aplicar ese dinero para ayudar al progreso industrial y comercial<br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarI('X'); this.disabled=true;">B)	Ayudar a los grupos religiosos a desarrollar sus actividades<br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarI('Y'); this.disabled=true;">C)	Cederlo para el desarrollo de la investigación científica<br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarI('Z'); this.disabled=true;">D)	Donarlo para el bienestar familiar
-    </p></td>
-    </tr>
-    
-        <tr id="B2I6">
-          <td width="90%" valign="top"><p>Cuando va usted al teatro disfruta más con:<br>
-    <input type="radio" name="B2pregunta1" onclick="B2agregarI('R'); this.disabled=true;">A)	La vida de los grandes hombres<br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarI('S'); this.disabled=true;">B)	El ballet o representaciones similares<br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarI('Z'); this.disabled=true;">C)	Argumentos sobre el sufrimiento y el amor<br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarI('Y'); this.disabled=true;">D)	Argumentos que tratan de aportar un punto de vista
-    </p></td>
-    </tr>
-     
-     
-         <tr>
-          <td align="center" width="40" valign="top"><input size="3" type="hidden" name="B2TI1" id="B2TI1"> 
-        <input size="3" type="hidden" name="B2TI2" id="B2TI2">
-          <input size="3" type="hidden" name="B2TI3" id="B2TI3">
-          <input size="3" type="hidden" name="B2TI4" id="B2TI4">	
-         <input size="3" type="hidden" name="B2TI5" id="B2TI5">  
-         <input size="3" type="hidden" name="B2TI6" id="B2TI6"></td> 
-        </tr>
-        
-        
-         <tr id="B2II1">
-          <td width="90%" valign="top"><p>Suponiendo que usted tuviera la habilidad necesaria y el sueldo fuera igual, ¿qué puesto desearía desempeñar?<br>
-    <input type="radio" name="B2pregunta1" onclick="B2agregarII('T'); this.disabled=true;">A)	Matemático<br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarII('Z'); this.disabled=true;">B)	Gerente de ventas<br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarII('S'); this.disabled=true;">C)	Político<br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarII('X'); this.disabled=true;">D)	Sacerdote
-    </p></td>
-    </tr>
-    
-            <tr id="B2II2">
-          <td width="90%" valign="top"><p>Si tuviera tiempo y dinero suficiente qué preferiría<br>
-    <input type="radio" name="B2pregunta1" onclick="B2agregarII('R'); this.disabled=true;">A)	Hacer una colección de pinturas y  esculturas escogidas<br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarII('Y'); this.disabled=true;">B)	Establecer un centro para el cuidado y rehabilitación de retrasados mentales<br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarII('X'); this.disabled=true;">C)	Postularse como político<br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarII('Z'); this.disabled=true;">D)	Establecer una negociación o una empresa industrial en su propiedad
-    </p></td>
-    </tr>
-    
-            <tr id="B2II3">
-          <td width="90%" valign="top"><p>Estando en una velada con unos amigos íntimos que tema de conversación le gustaría tratar:<br>
-    <input type="radio" name="B2pregunta1" onclick="B2agregarII('S'); this.disabled=true;">A)	El significado de la vida<br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarII('T'); this.disabled=true;">B)	Las últimas novedades del campo de la ciencia<br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarII('R'); this.disabled=true;">C)	La literatura<br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarII('Y'); this.disabled=true;">D)	El socialismo
-    </p></td>
-    </tr>
-    
-            <tr id="B2II4">
-          <td width="90%" valign="top"><p>Qué preferiría hacer en sus vacaciones<br>
-    <input type="radio" name="B2pregunta1" onclick="B2agregarII('T'); this.disabled=true;">A)	Escribir o publicar un ensayo sobre biología<br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarII('R'); this.disabled=true;">B)	Permanecer en un rincón lejano del país donde pueda contemplar paisajes<br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarII('X'); this.disabled=true;">C)	Inscribirse en un torneo local de tenis u otro deporte<br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarII('Z'); this.disabled=true;">D)	Iniciarse en un nuevo campo de negocios
-    </p></td>
-    </tr>
-    
-            <tr id="B2II5">
-          <td width="90%" valign="top"><p>Las grandes exploraciones le parecen más significativas a causa de <br>
-    <input type="radio" name="B2pregunta1" onclick="B2agregarII('X'); this.disabled=true;">A)	Representan conquistas del hombre sobre las fuerzas de la naturaleza<br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarII('T'); this.disabled=true;">B)	Acrecientan nuestro conocimiento de geografía, oceanografía,..<br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarII('Y'); this.disabled=true;">C)	Son lazos de unión para los intereses y sentimientos de todas las naciones<br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarII('S'); this.disabled=true;">D)	Cada uno de ellos contribuye un poco a la comprensión del universo.
-    </p></td>
-    </tr>
-         
-             <tr>
-          <td align="center" width="40" valign="top"><input size="3" type="hidden" name="B2TII1" id="B2TII1">
-            
-         <input size="3" type="hidden" name="B2TII2" id="B2TII2">
-         <input size="3" type="hidden" name="B2TII3" id="B2TII3">
-         <input size="3" type="hidden" name="B2TII4" id="B2TII4">
-         <input size="3" type="hidden" name="B2TII5" id="B2TII5">
-         <input size="3" type="hidden" name="B2TII6" id="B2TII6"></td> 
-        </tr>
-        
-        
-        
-        
-            <tr id="B2III1">
-          <td width="90%" valign="top"><p>Debemos brindar nuestra mayor lealtad a <br>
-    <input type="radio" name="B2pregunta1" onclick="B2agregarIII('Z'); this.disabled=true;">A)	Nuestra fe religiosa<br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarIII('T'); this.disabled=true;">B) Nuestros ideales de belleza<br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarIII('R'); this.disabled=true;">C) Nuestros compañeros o la organización donde trabajamos<br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarIII('X'); this.disabled=true;">D) Nuestras ideas sobre la caridad
-    </p></td>
-    </tr>
-    
-            <tr id="B2III2">
-          <td width="90%" valign="top"><p>Hasta qué punto admira usted a las siguientes personas<br>
-    <input type="radio" name="B2pregunta1" onclick="B2agregarIII('S'); this.disabled=true;">A)	Florence Nightingale. Fundadora Cruz Roja<br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarIII('Y'); this.disabled=true;">B)	Napoleón<br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarIII('T'); this.disabled=true;">C)	Henry Ford<br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarIII('X'); this.disabled=true;">D)	Galileo
-    </p></td>
-    </tr>
-    
-            <tr id="B2III3">
-          <td width="90%" valign="top"><p>Al escoger a su pareja valoraría:<br>
-    <input type="radio" name="B2pregunta1" onclick="B2agregarIII('Y'); this.disabled=true;">A)	Que pueda adquirir prestigio social y se gane la admiración de los demás<br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarIII('X'); this.disabled=true;">B)	Que le guste ayudar a la gente<br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarIII('Z'); this.disabled=true;">C)	Que sea muy espiritual<br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarIII('T'); this.disabled=true;">D)	Que tenga talento artístico
-    </p></td>
-    </tr>
-    
-            <tr id="B2III4">
-          <td width="90%" valign="top"><p>Examinando el cuadro de Leonardo Da Vinci, “La Ultima Cena”, que tendería a apreciar de él:<br>
-    <input type="radio" name="B2pregunta1" onclick="B2agregarIII('Z'); this.disabled=true;">A)	La expresión de las más altas aspiraciones y sentimientos espirituales<br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarIII('S'); this.disabled=true;">B)	Uno de los cuadros más valiosos que jamás se hayan pintado<br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarIII('R'); this.disabled=true;">C)	Una expresión de las múltiples habilidades de Leonardo y su época<br>
-    
-    <input type="radio" name="B2pregunta1" onclick="B2agregarIII('X'); this.disabled=true;">D)	La quintaesencia de la armonía y la composición
-    </p></td>
-    </tr>
-    
-                
-             <tr>
-          <td align="center" width="40" valign="top"><input size="3" type="hidden" name="B2TIII1" id="B2TIII1">
-          <input size="3" type="hidden" name="B2TIII2" id="B2TIII2">
-          <input size="3" type="hidden" name="B2TIII3" id="B2TIII3">
-          <input size="3" type="hidden" name="B2TIII4" id="B2TIII4">
-          <input size="3" type="hidden" name="B2TIII5" id="B2TIII5">
-          <input size="3" type="hidden" name="B2TIII6" id="B2TIII6"></td> 
-        </tr>
-        
-        
-        
-    </tbody></table>
-     
-     
-     
-     
-     
-      
-      <center><input type="button" onclick="resultados();" value="Ver resultados"></center>
-    </form>
-      
-      
+                            </p>
+                        </td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV4"
+                                onclick="agregarIV(3,'R','Y'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV4"
+                                onclick=" agregarIV(2,'R','Y'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV4"
+                                onclick="agregarIV(1,'R','Y'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV4"
+                                onclick=" agregarIV(0,'R','Y'); "></td>
+                    </tr>
+                    <tr id="IV5">
+                        <td width="90%" valign="top">
+                            <p>La evidencia acumulada hasta ahora parece
+                                demostrar que el universo se ha desarrollado
+                                hasta su elevado estado actual de acuerdo con
+                                leyes naturales de la manera que no sería
+                                necesario recurrir a una causa primera, propósito
+                                cósmico o divinidad para explicarlos:
 
-    <table width="90%" border="1" cellspacing="0" cellpadding="0">
-      <tbody><tr>
-        <td width="90%" valign="top"><p><strong>Valores morales de Allport</strong></p></td>
-        <td width="5%" valign="top"><p><strong>TOTALES</strong></p></td>
-      </tr>
-      <tr>
-        <td valign="top"><p><strong>TEORÉTICO:</strong> lleva a cabo la búsqueda de la verdad mediante la investigación, utilizando un proceso lógico, ordenado y claro.</p></td>
-        <th valign="top"><p id="RESULT_I"><strong>&nbsp;</strong></p></th>
-        
-      </tr>
-      <tr>
-        <td valign="top"><p><strong>ECONÓMICO:</strong> Preponderancia del valor de la utilidad de las relaciones. Implica lo práctico, materialista, ahorro de energía, espacio y tiempo. Se interesa en hacer suyo el conocimiento técnico para obtener provecho de las cosas y darles utilidad.</p></td>
-        <th valign="top"><p id="RESULT_II"><strong>&nbsp;</strong></p></th>
-        
-      </tr>
-      <tr>
-        <td valign="top"><p><strong>ESTETICO:</strong> Busca su satisfacción personal en la contemplación o reproducción de la belleza.</p></td>
-        <th valign="top"><p id="RESULT_III"><strong>&nbsp;</strong></p></th>
-        
-      </tr>
-      <tr>
-        <td valign="top"><p><strong>SOCIAL:</strong> Busca la compañía de los demás. Siente un gran placer en ofrecer y dar servicio a los demás.</p></td>
-        <th valign="top"><p id="RESULT_IV"><strong>&nbsp;</strong></p></th>
-        
-      </tr>
-      <tr>
-        <td valign="top"><p><strong>POLÍTICO:</strong> Utiliza los conocimientos como medio para obtener el poder. Requiere de voluntad de mando y deseo de dirigir y gobernar a los demás.</p></td>
-        <th valign="top"><p id="RESULT_V"><strong>&nbsp;</strong></p></th>
-        
-      </tr>
-      <tr>
-        <td valign="top"><p><strong>RELIGIOSO:</strong> Orienta su propia vida de acuerdo con sus convicciones éticas y religiosas, así mismo presenta una tendencia a invitar a participar a los demás en estas experiencias.</p></td>
-        <th valign="top"><p id="RESULT_VI"><strong>&nbsp;</strong></p></th>
-        
-      </tr>
-     
-    </tbody></table>
-    <!--<p id="ORDEN"><strong>&nbsp;</strong></p> -->
-    <span style="font-weight: bold">Sus puntuaciones ordenadas son los siguientes: </span>
-    <span style="font-weight: bold" id="ORDEN"><strong> &nbsp;</strong></span>
-    <span style="font-weight: bold" id="ORDEN2"><strong> &nbsp;</strong></span>
-    <br>
-    
-    <p>Los valores  determinan las <strong>metas que pretende alcanzar  la persona</strong>. Es preciso mantener una coherencia entre el valor, la meta y la  profesión elegida, para alcanzar <strong>el  máximo desarrollo personal y profesional</strong>. Por esto, muchas empresas  incluyen esta prueba en sus <strong>procesos de  selección</strong>.</p>
-    <br>
+                                <br>
+                                A)Estoy de acuerdo B)Estoy en desacuerdo
+                            </p>
+                        </td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV5"
+                                onclick="agregarIV(3,'S','T'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV5"
+                                onclick=" agregarIV(2,'S','T'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV5"
+                                onclick="agregarIV(1,'S','T'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV5"
+                                onclick=" agregarIV(0,'S','T'); "></td>
+                    </tr>
+                    <tr id="IV6">
+                        <td width="90%" valign="top">
+                            <p>En un periódico local que leería usted primero<br>
+                                A)La compraventa de casas
+                                B)La programación de galerías de arte
 
+
+                            </p>
+                        </td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV6"
+                                onclick="agregarIV(3,'X','Y'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaVI6"
+                                onclick=" agregarIV(2,'X','Y'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV6"
+                                onclick="agregarIV(1,'X','Y'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaVI6"
+                                onclick=" agregarIV(0,'X','Y'); "></td>
+                    </tr>
+                    <tr id="IV7">
+                        <td width="90%" valign="top">
+                            <p>Qué consideraría usted más importante en la educación de sus hijos <br>
+                                A) La religión
+                                B)La educación física
+
+
+                            </p>
+                        </td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV7"
+                                onclick="agregarIV(3,'T','Z'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV7"
+                                onclick=" agregarIV(2,'T','Z'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV7"
+                                onclick="agregarIV(1,'T','Z'); "></td>
+                        <td align="center" width="40" valign="top"><input type="radio" name="preguntaIV7"
+                                onclick=" agregarIV(0,'T','Z'); "></td>
+                    </tr>
+
+                    <tr>
+                        <td align="center" width="40" valign="top" colspan="5"><input size="3" type="hidden" name="TIV1"
+                                id="TIV1">
+                            <input size="3" type="hidden" name="TIV2" id="TIV2">
+                            <input size="3" type="hidden" name="TIV3" id="TIV3">
+                            <input size="3" type="hidden" name="TIV4" id="TIV4">
+                            <input size="3" type="hidden" name="TIV5" id="TIV5">
+                            <input size="3" type="hidden" name="TIV6" id="TIV6">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p align="center"><strong>Segunda Parte</strong></p>
+
+            <p>Cada uno de los siguientes apartados está compuesto por 4 posibles alternativas. Usted deberá puntuar
+                cada una de las alternativas otorgándole valor 4, a la contestación que pinche y con la que esté más de
+                acuerdo o prefiere en primer lugar, 3,2, con las intermedias y 1 la última que pinche y con la que no
+                sea de su prioridad .</p>
+
+            <table width="90%" border="0" cellspacing="10" cellpadding="0">
+                <tbody>
+                    <tr id="B2I1">
+                        <td width="90%" valign="top">
+                            <p>Le parece a usted que un buen gobierno debe preocuparse más por<br>
+                                <input type="radio" name="B2I1pregunta1" onclick="B2agregarI('Z'); this.disabled=true;">
+                                A) Dar ayuda a pobres, enfermos y ancianos <br>
+
+                                <input type="radio" name="B2I1pregunta1" onclick="B2agregarI('S'); this.disabled=true;">
+                                B) Desarrollar la industria y el comercio<br>
+
+                                <input type="radio" name="B2I1pregunta1" onclick="B2agregarI('T'); this.disabled=true;">
+                                C) Introducir los más elevados principios de ética y diplomacia en su política<br>
+
+                                <input type="radio" name="B2I1pregunta1" onclick="B2agregarI('R'); this.disabled=true;">
+                                D) Colocar a la nación en una posición de prestigio
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr id="B2I2">
+                        <td width="90%" valign="top">
+                            <p>En su opinión cómo debería utilizar un hombre de negocios que trabaja toda la semana su
+                                domingo<br>
+                                <input type="radio" name="B2I2pregunta1" onclick="B2agregarI('Z'); this.disabled=true;">A)
+                                Leyendo libros serios para elevar su nivel cultural <br>
+
+                                <input type="radio" name="B2I2pregunta1" onclick="B2agregarI('R'); this.disabled=true;">
+                                B) Tratando de ganar jugando al tenis o en carreras<br>
+
+                                <input type="radio" name="B2I2pregunta1" onclick="B2agregarI('S'); this.disabled=true;">C)
+                                Concurriendo a escuchar conciertos sinfónicos<br>
+
+                                <input type="radio" name="B2I2pregunta1" onclick="B2agregarI('X'); this.disabled=true;">D)
+                                Concurriendo a escuchar sermones religiosos de gran trascendencia
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr id="B2I3">
+                        <td width="90%" valign="top">
+                            <p>Si pudiera alterar el sistema de enseñanza de su comunidad, trataría usted de :<br>
+                                <input type="radio" name="B2I3pregunta1" onclick="B2agregarI('S'); this.disabled=true;">A)
+                                Darle mayor importancia al estudio de las bellas artes <br>
+
+                                <input type="radio" name="B2I3pregunta1" onclick="B2agregarI('Z'); this.disabled=true;">B)
+                                Incrementar el interés por el estudio de los problemas sociales<br>
+
+                                <input type="radio" name="B2I3pregunta1" onclick="B2agregarI('Y'); this.disabled=true;">C)
+                                Dotar de mayor número de aparatos a los laboratorios<br>
+
+                                <input type="radio" name="B2I3pregunta1" onclick="B2agregarI('T'); this.disabled=true;">D)
+                                Aumentar el valor práctico de la enseñanza
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr id="B2I4">
+                        <td width="90%" valign="top">
+                            <p>En amigos de su propio sexo prefiere usted uno que:<br>
+                                <input type="radio" name="B2I4pregunta1" onclick="B2agregarI('X'); this.disabled=true;">A)
+                                Sea eficiente, trabajador y tenga manera práctica de pensar <br>
+
+                                <input type="radio" name="B2I4pregunta1" onclick="B2agregarI('Y'); this.disabled=true;">
+                                B) Se interese seriamente en pensar a cerca de su actitud hacia la vida<br>
+
+                                <input type="radio" name="B2I4pregunta1" onclick="B2agregarI('R'); this.disabled=true;">C)
+                                Posea cualidades como líder y organizador<br>
+
+                                <input type="radio" name="B2I4pregunta1" onclick="B2agregarI('S'); this.disabled=true;">D)
+                                Demuestre sensibilidad artística y sentimental
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr id="B2I5">
+                        <td width="90%" valign="top">
+                            <p>Si viviera en una ciudad pequeña y tuviera más ingresos de los necesarios para cubrir sus
+                                necesidades, preferiría:<br>
+                                <input type="radio" name="B2I5pregunta1" onclick="B2agregarI('T'); this.disabled=true;">A)
+                                Aplicar ese dinero para ayudar al progreso industrial y comercial<br>
+
+                                <input type="radio" name="B2I5pregunta1" onclick="B2agregarI('X'); this.disabled=true;">B)
+                                Ayudar a los grupos religiosos a desarrollar sus actividades<br>
+
+                                <input type="radio" name="B2I5pregunta1" onclick="B2agregarI('Y'); this.disabled=true;">C)
+                                Cederlo para el desarrollo de la investigación científica<br>
+
+                                <input type="radio" name="B2I5pregunta1" onclick="B2agregarI('Z'); this.disabled=true;">D)
+                                Donarlo para el bienestar familiar
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr id="B2I6">
+                        <td width="90%" valign="top">
+                            <p>Cuando va usted al teatro disfruta más con:<br>
+                                <input type="radio" name="B2I6pregunta1" onclick="B2agregarI('R'); this.disabled=true;">A)
+                                La vida de los grandes hombres<br>
+
+                                <input type="radio" name="B2I6pregunta1" onclick="B2agregarI('S'); this.disabled=true;">B)
+                                El ballet o representaciones similares<br>
+
+                                <input type="radio" name="B2I6pregunta1" onclick="B2agregarI('Z'); this.disabled=true;">C)
+                                Argumentos sobre el sufrimiento y el amor<br>
+
+                                <input type="radio" name="B2I6pregunta1" onclick="B2agregarI('Y'); this.disabled=true;">D)
+                                Argumentos que tratan de aportar un punto de vista
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td align="center" width="40" valign="top"><input size="3" type="hidden" name="B2TI1"
+                                id="B2TI1">
+                            <input size="3" type="hidden" name="B2TI2" id="B2TI2">
+                            <input size="3" type="hidden" name="B2TI3" id="B2TI3">
+                            <input size="3" type="hidden" name="B2TI4" id="B2TI4">
+                            <input size="3" type="hidden" name="B2TI5" id="B2TI5">
+                            <input size="3" type="hidden" name="B2TI6" id="B2TI6">
+                        </td>
+                    </tr>
+
+
+                    <tr id="B2II1">
+                        <td width="90%" valign="top">
+                            <p>Suponiendo que usted tuviera la habilidad necesaria y el sueldo fuera igual, ¿qué puesto
+                                desearía desempeñar?<br>
+                                <input type="radio" name="B2II1pregunta1"
+                                    onclick="B2agregarII('T'); this.disabled=true;">A) Matemático<br>
+
+                                <input type="radio" name="B2II1pregunta1"
+                                    onclick="B2agregarII('Z'); this.disabled=true;">B) Gerente de ventas<br>
+
+                                <input type="radio" name="B2II1pregunta1"
+                                    onclick="B2agregarII('S'); this.disabled=true;">C) Político<br>
+
+                                <input type="radio" name="B2II1pregunta1"
+                                    onclick="B2agregarII('X'); this.disabled=true;">D) Sacerdote
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr id="B2II2">
+                        <td width="90%" valign="top">
+                            <p>Si tuviera tiempo y dinero suficiente qué preferiría<br>
+                                <input type="radio" name="B2II2pregunta1"
+                                    onclick="B2agregarII('R'); this.disabled=true;">A) Hacer una colección de pinturas y
+                                esculturas escogidas<br>
+
+                                <input type="radio" name="B2II2pregunta1"
+                                    onclick="B2agregarII('Y'); this.disabled=true;">B) Establecer un centro para el
+                                cuidado y rehabilitación de retrasados mentales<br>
+
+                                <input type="radio" name="B2II2pregunta1"
+                                    onclick="B2agregarII('X'); this.disabled=true;">C) Postularse como político<br>
+
+                                <input type="radio" name="B2II2pregunta1"
+                                    onclick="B2agregarII('Z'); this.disabled=true;">D) Establecer una negociación o una
+                                empresa industrial en su propiedad
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr id="B2II3">
+                        <td width="90%" valign="top">
+                            <p>Estando en una velada con unos amigos íntimos que tema de conversación le gustaría
+                                tratar:<br>
+                                <input type="radio" name="B2II3pregunta1"
+                                    onclick="B2agregarII('S'); this.disabled=true;">A) El significado de la vida<br>
+
+                                <input type="radio" name="B2II3pregunta1"
+                                    onclick="B2agregarII('T'); this.disabled=true;">B) Las últimas novedades del campo
+                                de la ciencia<br>
+
+                                <input type="radio" name="B2II3pregunta1"
+                                    onclick="B2agregarII('R'); this.disabled=true;">C) La literatura<br>
+
+                                <input type="radio" name="B2II3pregunta1"
+                                    onclick="B2agregarII('Y'); this.disabled=true;">D) El socialismo
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr id="B2II4">
+                        <td width="90%" valign="top">
+                            <p>Qué preferiría hacer en sus vacaciones<br>
+                                <input type="radio" name="B2II4pregunta1"
+                                    onclick="B2agregarII('T'); this.disabled=true;">A) Escribir o publicar un ensayo
+                                sobre biología<br>
+
+                                <input type="radio" name="B2II4pregunta1"
+                                    onclick="B2agregarII('R'); this.disabled=true;">B) Permanecer en un rincón lejano
+                                del país donde pueda contemplar paisajes<br>
+
+                                <input type="radio" name="B2II4pregunta1"
+                                    onclick="B2agregarII('X'); this.disabled=true;">C) Inscribirse en un torneo local de
+                                tenis u otro deporte<br>
+
+                                <input type="radio" name="B2II4pregunta1"
+                                    onclick="B2agregarII('Z'); this.disabled=true;">D) Iniciarse en un nuevo campo de
+                                negocios
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr id="B2II5">
+                        <td width="90%" valign="top">
+                            <p>Las grandes exploraciones le parecen más significativas a causa de <br>
+                                <input type="radio" name="B2II5pregunta1"
+                                    onclick="B2agregarII('X'); this.disabled=true;">A) Representan conquistas del hombre
+                                sobre las fuerzas de la naturaleza<br>
+
+                                <input type="radio" name="B2II5pregunta1"
+                                    onclick="B2agregarII('T'); this.disabled=true;">B) Acrecientan nuestro conocimiento
+                                de geografía, oceanografía,..<br>
+
+                                <input type="radio" name="B2II5pregunta1"
+                                    onclick="B2agregarII('Y'); this.disabled=true;">C) Son lazos de unión para los
+                                intereses y sentimientos de todas las naciones<br>
+
+                                <input type="radio" name="B2II5pregunta1"
+                                    onclick="B2agregarII('S'); this.disabled=true;">D) Cada uno de ellos contribuye un
+                                poco a la comprensión del universo.
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td align="center" width="40" valign="top"><input size="3" type="hidden" name="B2TII1"
+                                id="B2TII1">
+
+                            <input size="3" type="hidden" name="B2TII2" id="B2TII2">
+                            <input size="3" type="hidden" name="B2TII3" id="B2TII3">
+                            <input size="3" type="hidden" name="B2TII4" id="B2TII4">
+                            <input size="3" type="hidden" name="B2TII5" id="B2TII5">
+                            <input size="3" type="hidden" name="B2TII6" id="B2TII6">
+                        </td>
+                    </tr>
+
+                    <tr id="B2III1">
+                        <td width="90%" valign="top">
+                            <p>Debemos brindar nuestra mayor lealtad a <br>
+                                <input type="radio" name="B2III1pregunta1"
+                                    onclick="B2agregarIII('Z'); this.disabled=true;">A) Nuestra fe religiosa<br>
+
+                                <input type="radio" name="B2III1pregunta1"
+                                    onclick="B2agregarIII('T'); this.disabled=true;">B) Nuestros ideales de belleza<br>
+
+                                <input type="radio" name="B2III1pregunta1"
+                                    onclick="B2agregarIII('R'); this.disabled=true;">C) Nuestros compañeros o la
+                                organización donde trabajamos<br>
+
+                                <input type="radio" name="B2III1pregunta1"
+                                    onclick="B2agregarIII('X'); this.disabled=true;">D) Nuestras ideas sobre la caridad
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr id="B2III2">
+                        <td width="90%" valign="top">
+                            <p>Hasta qué punto admira usted a las siguientes personas<br>
+                                <input type="radio" name="B2III2pregunta1"
+                                    onclick="B2agregarIII('S'); this.disabled=true;">A) Florence Nightingale. Fundadora
+                                Cruz Roja<br>
+
+                                <input type="radio" name="B2III2pregunta1"
+                                    onclick="B2agregarIII('Y'); this.disabled=true;">B) Napoleón<br>
+
+                                <input type="radio" name="B2III2pregunta1"
+                                    onclick="B2agregarIII('T'); this.disabled=true;">C) Henry Ford<br>
+
+                                <input type="radio" name="B2III2pregunta1"
+                                    onclick="B2agregarIII('X'); this.disabled=true;">D) Galileo
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr id="B2III3">
+                        <td width="90%" valign="top">
+                            <p>Al escoger a su pareja valoraría:<br>
+                                <input type="radio" name="B2III3pregunta1"
+                                    onclick="B2agregarIII('Y'); this.disabled=true;">A) Que pueda adquirir prestigio
+                                social y se gane la admiración de los demás<br>
+
+                                <input type="radio" name="B2III3pregunta1"
+                                    onclick="B2agregarIII('X'); this.disabled=true;">B) Que le guste ayudar a la
+                                gente<br>
+
+                                <input type="radio" name="B2III3pregunta1"
+                                    onclick="B2agregarIII('Z'); this.disabled=true;">C) Que sea muy espiritual<br>
+
+                                <input type="radio" name="B2III3pregunta1"
+                                    onclick="B2agregarIII('T'); this.disabled=true;">D) Que tenga talento artístico
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr id="B2III4">
+                        <td width="90%" valign="top">
+                            <p>Examinando el cuadro de Leonardo Da Vinci, “La Ultima Cena”, que tendería a apreciar de
+                                él:<br>
+                                <input type="radio" name="B2III4pregunta1"
+                                    onclick="B2agregarIII('Z'); this.disabled=true;">A) La expresión de las más altas
+                                aspiraciones y sentimientos espirituales<br>
+
+                                <input type="radio" name="B2III4pregunta1"
+                                    onclick="B2agregarIII('S'); this.disabled=true;">B) Uno de los cuadros más valiosos
+                                que jamás se hayan pintado<br>
+
+                                <input type="radio" name="B2III4pregunta1"
+                                    onclick="B2agregarIII('R'); this.disabled=true;">C) Una expresión de las múltiples
+                                habilidades de Leonardo y su época<br>
+
+                                <input type="radio" name="B2III4pregunta1"
+                                    onclick="B2agregarIII('X'); this.disabled=true;">D) La quintaesencia de la armonía y
+                                la composición
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td align="center" width="40" valign="top"><input size="3" type="hidden" name="B2TIII1"
+                                id="B2TIII1">
+                            <input size="3" type="hidden" name="B2TIII2" id="B2TIII2">
+                            <input size="3" type="hidden" name="B2TIII3" id="B2TIII3">
+                            <input size="3" type="hidden" name="B2TIII4" id="B2TIII4">
+                            <input size="3" type="hidden" name="B2TIII5" id="B2TIII5">
+                            <input size="3" type="hidden" name="B2TIII6" id="B2TIII6">
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <center><input type="button" onclick="resultados();" value="Ver resultados"></center>
+        </form>
+
+        <table width="90%" border="1" cellspacing="0" cellpadding="0">
+            <tbody>
+                <tr>
+                    <td width="90%" valign="top">
+                        <p><strong>Valores morales de Allport</strong></p>
+                    </td>
+                    <td width="5%" valign="top">
+                        <p><strong>TOTALES</strong></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top">
+                        <p><strong>TEORÉTICO:</strong> lleva a cabo la búsqueda de la verdad mediante la investigación,
+                            utilizando un proceso lógico, ordenado y claro.</p>
+                    </td>
+                    <th valign="top">
+                        <p id="RESULT_I"><strong>&nbsp;</strong></p>
+                    </th>
+
+                </tr>
+                <tr>
+                    <td valign="top">
+                        <p><strong>ECONÓMICO:</strong> Preponderancia del valor de la utilidad de las relaciones.
+                            Implica lo práctico, materialista, ahorro de energía, espacio y tiempo. Se interesa en hacer
+                            suyo el conocimiento técnico para obtener provecho de las cosas y darles utilidad.</p>
+                    </td>
+                    <th valign="top">
+                        <p id="RESULT_II"><strong>&nbsp;</strong></p>
+                    </th>
+
+                </tr>
+                <tr>
+                    <td valign="top">
+                        <p><strong>ESTETICO:</strong> Busca su satisfacción personal en la contemplación o reproducción
+                            de la belleza.</p>
+                    </td>
+                    <th valign="top">
+                        <p id="RESULT_III"><strong>&nbsp;</strong></p>
+                    </th>
+
+                </tr>
+                <tr>
+                    <td valign="top">
+                        <p><strong>SOCIAL:</strong> Busca la compañía de los demás. Siente un gran placer en ofrecer y
+                            dar servicio a los demás.</p>
+                    </td>
+                    <th valign="top">
+                        <p id="RESULT_IV"><strong>&nbsp;</strong></p>
+                    </th>
+
+                </tr>
+                <tr>
+                    <td valign="top">
+                        <p><strong>POLÍTICO:</strong> Utiliza los conocimientos como medio para obtener el poder.
+                            Requiere de voluntad de mando y deseo de dirigir y gobernar a los demás.</p>
+                    </td>
+                    <th valign="top">
+                        <p id="RESULT_V"><strong>&nbsp;</strong></p>
+                    </th>
+
+                </tr>
+                <tr>
+                    <td valign="top">
+                        <p><strong>RELIGIOSO:</strong> Orienta su propia vida de acuerdo con sus convicciones éticas y
+                            religiosas, así mismo presenta una tendencia a invitar a participar a los demás en estas
+                            experiencias.</p>
+                    </td>
+                    <th valign="top">
+                        <p id="RESULT_VI"><strong>&nbsp;</strong></p>
+                    </th>
+
+                </tr>
+
+            </tbody>
+        </table>
+        <!--<p id="ORDEN"><strong>&nbsp;</strong></p> -->
+        <span style="font-weight: bold">Sus puntuaciones ordenadas son los siguientes: </span>
+        <span style="font-weight: bold" id="ORDEN2"><strong> &nbsp;</strong></span>
+        <br>
+
+        <br>
+        <br>
+
+        <span style="font-weight: bold">Puntuación total: </span>
+        <span style="font-weight: bold" id="totalGlobal"><strong> &nbsp;</strong></span>
+        <br>
+
+        <p>Los valores determinan las <strong>metas que pretende alcanzar la persona</strong>. Es preciso mantener una
+            coherencia entre el valor, la meta y la profesión elegida, para alcanzar <strong>el máximo desarrollo
+                personal y profesional</strong>. Por esto, muchas empresas incluyen esta prueba en sus <strong>procesos
+                de selección</strong>.</p>
+        <br>
 
     </div>
 
     <script async="" type="text/javascript">
-        <!--
-       R=0;
-      S=0;
-      T=0;
-      X=0;
-      Y=0;
-      Z=0;
-      
-  function ponercero(){
-      R=0;
-      S=0;
-      T=0;
-      X=0;
-      Y=0;
-      Z=0;
-      return;
-  }
-  
-  function CALCULAR(valor,A,B) {
-      valor = parseInt(valor); 
-  
-  
-      if (A=="R"){
-      R=R+valor;
-      }
-      if (A=="S"){
-      S=S+valor;
-      }
-      if (A=="T"){
-      T=T+valor;
-      }
-      if (A=="X"){
-      X=X+valor;
-      }
-      if (A=="Y"){
-      Y=Y+valor;
-      }
-      if (A=="Z"){
-      Z=Z+valor;
-      }
-      
-      
-      
-      if(B=="R"){
-      R=R+3-valor;
-      }
-      if(B=="S"){
-      S=S+3-valor;
-      }
-      if(B=="T"){
-      T=T+3-valor;
-      }
-      if(B=="X"){
-      X=X+3-valor;
-      }
-      if(B=="Y"){
-      Y=Y+3-valor;
-      }
-      if(B=="Z"){
-      Z=Z+3-valor;
-      }
-      
-      return;
-  
-  }
-  
-  
-  function agregarI(valor,A,B) {
-  CALCULAR (valor,A,B);
-  //alert(A+B);
-  //alert(R+' '+S);
-      result.TI1.value =R;
-      result.TI2.value =S;
-      result.TI3.value =T;
-      result.TI4.value =X;
-      result.TI5.value =Y;		
-      result.TI6.value =Z;
-  }
-  
-  function agregarII(valor,A,B) {
-  CALCULAR (valor,A,B);
-  //alert(A+B);
-  //alert(R+' '+S);
-      result.TII1.value =R;
-      result.TII2.value =S;
-      result.TII3.value =T;
-      result.TII4.value =X;
-      result.TII5.value =Y;		
-      result.TII6.value =Z;
-  }
-  
-  
-  
-  function agregarIII(valor,A,B) {
-  CALCULAR (valor,A,B);
-  //alert(A+B);
-  //alert(R+' '+S);
-      result.TIII1.value =R;
-      result.TIII2.value =S;
-      result.TIII3.value =T;
-      result.TIII4.value =X;
-      result.TIII5.value =Y;		
-      result.TIII6.value =Z;
-  }
-  
-  
-  
-  function agregarIV(valor,A,B) {
-  CALCULAR (valor,A,B);
-  //alert(A+B);
-  //alert(R+' '+S);
-      result.TIV1.value =R;
-      result.TIV2.value =S;
-      result.TIV3.value =T;
-      result.TIV4.value =X;
-      result.TIV5.value =Y;		
-      result.TIV6.value =Z;
-  
-  }
-  
-  function B2_ponercero() {
-      PRIMERO=0;
-      SEGUNDO=0;
-      TERCERO=0;
-      CUARTO=0;
-  }
-  
-  
-  PRIMERO=0;
-  SEGUNDO=0;
-  TERCERO=0;
-  CUARTO=0;
-  primeravez=0;
-  
-  
-  function B2CALCULAR(letra) {
-  
-  if (primeravez==0){//ponemos a cero rst... para la segunda parte entera.
-      primeravez=1;
-      ponercero();
-      }
-  
-  
-      if (PRIMERO==0){
-          PRIMERO=4;
-          if (letra=="R"){
-              R=R+PRIMERO;
-          }
-          if (letra=="S"){
-              S=S+PRIMERO;
-          }
-          if (letra=="T"){
-              T=T+PRIMERO;
-          }
-          if (letra=="X"){
-              X=X+PRIMERO;
-          }
-          if (letra=="Y"){
-              Y=Y+PRIMERO;
-          }
-          if (letra=="Z"){
-              Z=Z+PRIMERO;
-          }									
-      } else{
-          if (SEGUNDO==0){
-              SEGUNDO=3;
-              if (letra=="R"){
-                  R=R+SEGUNDO;
-              }
-              if (letra=="S"){
-                  S=S+SEGUNDO;
-              }
-              if (letra=="T"){
-                  T=T+SEGUNDO;
-              }
-              if (letra=="X"){
-                  X=X+SEGUNDO;
-              }
-              if (letra=="Y"){
-                  Y=Y+SEGUNDO;
-              }
-              if (letra=="Z"){
-                  Z=Z+SEGUNDO;
-              }
-          } else{
-              if (TERCERO==0){
-              TERCERO=2;
-                  if (letra=="R"){
-                      R=R+TERCERO;
-                  }
-                  if (letra=="S"){
-                      S=S+TERCERO;
-                  }
-                  if (letra=="T"){
-                      T=T+TERCERO;
-                  }
-                  if (letra=="X"){
-                      X=X+TERCERO;
-                  }
-                  if (letra=="Y"){
-                      Y=Y+TERCERO;
-                  }
-                  if (letra=="Z"){
-                      Z=Z+TERCERO;
-                  }
-              }else{
-                  if (CUARTO==0){
-                  CUARTO=1;
-                      if (letra=="R"){
-                          R=R+CUARTO;
-                      }
-                      if (letra=="S"){
-                          S=S+CUARTO;
-                      }
-                      if (letra=="T"){
-                          T=T+CUARTO;
-                      }
-                      if (letra=="X"){
-                          X=X+CUARTO;
-                      }
-                      if (letra=="Y"){
-                          Y=Y+CUARTO;
-                      }
-                      if (letra=="Z"){
-                          Z=Z+CUARTO;
-                      }
-                      B2_ponercero();
-                  }			
-              }
-          }		
-      }
-  
-  
-  return;
-  }
-  
-  function B2agregarI(letra) {
-  
-      B2CALCULAR(letra);
-  
-      result.B2TI1.value =R;
-      result.B2TI2.value =S;
-      result.B2TI3.value =T;
-      result.B2TI4.value =X;
-      result.B2TI5.value =Y;		
-      result.B2TI6.value =Z;
-  
-  }
-  
-  
-  
-  function B2agregarII(letra) {
-  if (primeravez==1){//ponemos a cero rst... para la segunda parte entera.
-      primeravez=2;
-      ponercero();
-      }
-  
-      B2CALCULAR(letra);
-  
-      result.B2TII1.value =R;
-      result.B2TII2.value =S;
-      result.B2TII3.value =T;
-      result.B2TII4.value =X;
-      result.B2TII5.value =Y;		
-      result.B2TII6.value =Z;
-  
-  }
-  
-  function B2agregarIII(letra) {
-  if (primeravez==2){//ponemos a cero rst... para la segunda parte entera.
-      primeravez=3;
-      ponercero();
-      }
-  
-      B2CALCULAR(letra);
-  
-      result.B2TIII1.value =R;
-      result.B2TIII2.value =S;
-      result.B2TIII3.value =T;
-      result.B2TIII4.value =X;
-      result.B2TIII5.value =Y;		
-      result.B2TIII6.value =Z;
-      
-  }
-  
-  ORDENADO='';
-  ORDENADO2='';
-  function resultados(){
-  TEORETICO=0+parseInt(result.TI1.value)+parseInt(result.TII6.value)+parseInt(result.TIII4.value)+parseInt(result.TIV2.value)+parseInt(result.B2TI5.value)+parseInt(result.B2TII3.value)+parseInt(result.B2TIII1.value)+3;
-  
-  ECONOMICO=0+parseInt(result.TI2.value)+parseInt(result.TII5.value)+parseInt(result.TIII1.value)+parseInt(result.TIV4.value)+parseInt(result.B2TI3.value)+parseInt(result.B2TII6.value)+parseInt(result.B2TIII2.value)-1;
-  
-  ESTETICO=0+parseInt(result.TI3.value)+parseInt(result.TII4.value)+parseInt(result.TIII6.value)+parseInt(result.TIV5.value)+parseInt(result.B2TI2.value)+parseInt(result.B2TII1.value)+parseInt(result.B2TIII3.value)+4;
-  
-  SOCIAL=0+parseInt(result.TI4.value)+parseInt(result.TII3.value)+parseInt(result.TIII2.value)+parseInt(result.TIV1.value)+parseInt(result.B2TI6.value)+parseInt(result.B2TII5.value)+parseInt(result.B2TIII4.value)-3;
-  
-  POLITICO=0+parseInt(result.TI5.value)+parseInt(result.TII2.value)+parseInt(result.TIII3.value)+parseInt(result.TIV6.value)+parseInt(result.B2TI1.value)+parseInt(result.B2TII4.value)+parseInt(result.B2TIII5.value)+2;
-  
-  RELIGIOSO=0+parseInt(result.TI6.value)+parseInt(result.TII1.value)+parseInt(result.TIII5.value)+parseInt(result.TIV3.value)+parseInt(result.B2TI4.value)+parseInt(result.B2TII2.value)+parseInt(result.B2TIII6.value)-5;
-  
-  
-       RESULT_I.innerHTML = TEORETICO;
-       RESULT_II.innerHTML = ECONOMICO;
-       RESULT_III.innerHTML = ESTETICO;
-       RESULT_IV.innerHTML = SOCIAL;
-       RESULT_V.innerHTML = POLITICO;
-       RESULT_VI.innerHTML = RELIGIOSO;
-  
-  
-  var vec = new Array(TEORETICO, ECONOMICO, ESTETICO, SOCIAL, POLITICO, RELIGIOSO)
-  var tipos = new Array("TEORETICO", "ECONOMICO", "ESTETICO", "SOCIAL", "POLITICO", "RELIGIOSO")
-  
-      var f;
-  //var vec = new Array(10, 11, 9, 33, 44, 32, 1 )
-    vec.sort(function(v1,v2) {
-     
-        return v1-v2;
-  
-    });
-    
-    vec.reverse();
-   // document.write('Vector ordenado en forma descendente<br>');
-    for(f=0;f<vec.length;f++)
-    {
-    
-     // ORDENADO=ORDENADO+tipos[f]+', ';
-      ORDENADO2=ORDENADO2+vec[f]+', ';
-      
-    }
-  
-   
-  // ORDEN.innerHTML=ORDENADO;
-   ORDEN2.innerHTML=ORDENADO2;
-   
-  
-  
-  
-  
-  }
-  
-  </script>
-    </body>
+
+        R = 0;
+        S = 0;
+        T = 0;
+        X = 0;
+        Y = 0;
+        Z = 0;
+
+        function ponercero() {
+            R = 0;
+            S = 0;
+            T = 0;
+            X = 0;
+            Y = 0;
+            Z = 0;
+            return;
+        }
+
+        function CALCULAR(valor, A, B) {
+            valor = parseInt(valor);
+
+
+            if (A == "R") {
+                R = R + valor;
+            }
+            if (A == "S") {
+                S = S + valor;
+            }
+            if (A == "T") {
+                T = T + valor;
+            }
+            if (A == "X") {
+                X = X + valor;
+            }
+            if (A == "Y") {
+                Y = Y + valor;
+            }
+            if (A == "Z") {
+                Z = Z + valor;
+            }
+
+
+
+            if (B == "R") {
+                R = R + 3 - valor;
+            }
+            if (B == "S") {
+                S = S + 3 - valor;
+            }
+            if (B == "T") {
+                T = T + 3 - valor;
+            }
+            if (B == "X") {
+                X = X + 3 - valor;
+            }
+            if (B == "Y") {
+                Y = Y + 3 - valor;
+            }
+            if (B == "Z") {
+                Z = Z + 3 - valor;
+            }
+
+            return;
+
+        }
+
+        function agregarI(valor, A, B) {
+            CALCULAR(valor, A, B);
+            //alert(A+B);
+            //alert(R+' '+S);
+            result.TI1.value = R;
+            result.TI2.value = S;
+            result.TI3.value = T;
+            result.TI4.value = X;
+            result.TI5.value = Y;
+            result.TI6.value = Z;
+        }
+
+        function agregarII(valor, A, B) {
+            CALCULAR(valor, A, B);
+            //alert(A+B);
+            //alert(R+' '+S);
+            result.TII1.value = R;
+            result.TII2.value = S;
+            result.TII3.value = T;
+            result.TII4.value = X;
+            result.TII5.value = Y;
+            result.TII6.value = Z;
+        }
+
+        function agregarIII(valor, A, B) {
+            CALCULAR(valor, A, B);
+            //alert(A+B);
+            //alert(R+' '+S);
+            result.TIII1.value = R;
+            result.TIII2.value = S;
+            result.TIII3.value = T;
+            result.TIII4.value = X;
+            result.TIII5.value = Y;
+            result.TIII6.value = Z;
+        }
+
+        function agregarIV(valor, A, B) {
+            CALCULAR(valor, A, B);
+            //alert(A+B);
+            //alert(R+' '+S);
+            result.TIV1.value = R;
+            result.TIV2.value = S;
+            result.TIV3.value = T;
+            result.TIV4.value = X;
+            result.TIV5.value = Y;
+            result.TIV6.value = Z;
+
+        }
+
+        function B2_ponercero() {
+            PRIMERO = 0;
+            SEGUNDO = 0;
+            TERCERO = 0;
+            CUARTO = 0;
+        }
+
+
+        PRIMERO = 0;
+        SEGUNDO = 0;
+        TERCERO = 0;
+        CUARTO = 0;
+        primeravez = 0;
+
+        function B2CALCULAR(letra) {
+
+            if (primeravez == 0) {//ponemos a cero rst... para la segunda parte entera.
+                primeravez = 1;
+                ponercero();
+            }
+
+
+            if (PRIMERO == 0) {
+                PRIMERO = 4;
+                if (letra == "R") {
+                    R = R + PRIMERO;
+                }
+                if (letra == "S") {
+                    S = S + PRIMERO;
+                }
+                if (letra == "T") {
+                    T = T + PRIMERO;
+                }
+                if (letra == "X") {
+                    X = X + PRIMERO;
+                }
+                if (letra == "Y") {
+                    Y = Y + PRIMERO;
+                }
+                if (letra == "Z") {
+                    Z = Z + PRIMERO;
+                }
+            } else {
+                if (SEGUNDO == 0) {
+                    SEGUNDO = 3;
+                    if (letra == "R") {
+                        R = R + SEGUNDO;
+                    }
+                    if (letra == "S") {
+                        S = S + SEGUNDO;
+                    }
+                    if (letra == "T") {
+                        T = T + SEGUNDO;
+                    }
+                    if (letra == "X") {
+                        X = X + SEGUNDO;
+                    }
+                    if (letra == "Y") {
+                        Y = Y + SEGUNDO;
+                    }
+                    if (letra == "Z") {
+                        Z = Z + SEGUNDO;
+                    }
+                } else {
+                    if (TERCERO == 0) {
+                        TERCERO = 2;
+                        if (letra == "R") {
+                            R = R + TERCERO;
+                        }
+                        if (letra == "S") {
+                            S = S + TERCERO;
+                        }
+                        if (letra == "T") {
+                            T = T + TERCERO;
+                        }
+                        if (letra == "X") {
+                            X = X + TERCERO;
+                        }
+                        if (letra == "Y") {
+                            Y = Y + TERCERO;
+                        }
+                        if (letra == "Z") {
+                            Z = Z + TERCERO;
+                        }
+                    } else {
+                        if (CUARTO == 0) {
+                            CUARTO = 1;
+                            if (letra == "R") {
+                                R = R + CUARTO;
+                            }
+                            if (letra == "S") {
+                                S = S + CUARTO;
+                            }
+                            if (letra == "T") {
+                                T = T + CUARTO;
+                            }
+                            if (letra == "X") {
+                                X = X + CUARTO;
+                            }
+                            if (letra == "Y") {
+                                Y = Y + CUARTO;
+                            }
+                            if (letra == "Z") {
+                                Z = Z + CUARTO;
+                            }
+                            B2_ponercero();
+                        }
+                    }
+                }
+            }
+
+
+            return;
+        }
+
+        function B2agregarI(letra) {
+
+            B2CALCULAR(letra);
+
+            result.B2TI1.value = R;
+            result.B2TI2.value = S;
+            result.B2TI3.value = T;
+            result.B2TI4.value = X;
+            result.B2TI5.value = Y;
+            result.B2TI6.value = Z;
+
+        }
+
+        function B2agregarII(letra) {
+            if (primeravez == 1) {//ponemos a cero rst... para la segunda parte entera.
+                primeravez = 2;
+                ponercero();
+            }
+
+            B2CALCULAR(letra);
+
+            result.B2TII1.value = R;
+            result.B2TII2.value = S;
+            result.B2TII3.value = T;
+            result.B2TII4.value = X;
+            result.B2TII5.value = Y;
+            result.B2TII6.value = Z;
+
+        }
+
+        function B2agregarIII(letra) {
+            if (primeravez == 2) {//ponemos a cero rst... para la segunda parte entera.
+                primeravez = 3;
+                ponercero();
+            }
+
+            B2CALCULAR(letra);
+
+            result.B2TIII1.value = R;
+            result.B2TIII2.value = S;
+            result.B2TIII3.value = T;
+            result.B2TIII4.value = X;
+            result.B2TIII5.value = Y;
+            result.B2TIII6.value = Z;
+
+        }
+
+        ORDENADO = '';
+        ORDENADO2 = '';
+        function resultados() {
+            TEORETICO = 0 + parseInt(result.TI1.value) + parseInt(result.TII6.value) + parseInt(result.TIII4.value) + parseInt(result.TIV2.value) + parseInt(result.B2TI5.value) + parseInt(result.B2TII3.value) + parseInt(result.B2TIII1.value) + 3;
+
+            ECONOMICO = 0 + parseInt(result.TI2.value) + parseInt(result.TII5.value) + parseInt(result.TIII1.value) + parseInt(result.TIV4.value) + parseInt(result.B2TI3.value) + parseInt(result.B2TII6.value) + parseInt(result.B2TIII2.value) - 1;
+
+            ESTETICO = 0 + parseInt(result.TI3.value) + parseInt(result.TII4.value) + parseInt(result.TIII6.value) + parseInt(result.TIV5.value) + parseInt(result.B2TI2.value) + parseInt(result.B2TII1.value) + parseInt(result.B2TIII3.value) + 4;
+
+            SOCIAL = 0 + parseInt(result.TI4.value) + parseInt(result.TII3.value) + parseInt(result.TIII2.value) + parseInt(result.TIV1.value) + parseInt(result.B2TI6.value) + parseInt(result.B2TII5.value) + parseInt(result.B2TIII4.value) - 3;
+
+            POLITICO = 0 + parseInt(result.TI5.value) + parseInt(result.TII2.value) + parseInt(result.TIII3.value) + parseInt(result.TIV6.value) + parseInt(result.B2TI1.value) + parseInt(result.B2TII4.value) + parseInt(result.B2TIII5.value) + 2;
+
+            RELIGIOSO = 0 + parseInt(result.TI6.value) + parseInt(result.TII1.value) + parseInt(result.TIII5.value) + parseInt(result.TIV3.value) + parseInt(result.B2TI4.value) + parseInt(result.B2TII2.value) + parseInt(result.B2TIII6.value) - 5;
+
+
+            RESULT_I.innerHTML = TEORETICO;
+            RESULT_II.innerHTML = ECONOMICO;
+            RESULT_III.innerHTML = ESTETICO;
+            RESULT_IV.innerHTML = SOCIAL;
+            RESULT_V.innerHTML = POLITICO;
+            RESULT_VI.innerHTML = RELIGIOSO;
+
+            var totalEnElTest = TEORETICO + ECONOMICO + ESTETICO + SOCIAL + POLITICO + RELIGIOSO;
+
+
+            var vec = new Array(TEORETICO, ECONOMICO, ESTETICO, SOCIAL, POLITICO, RELIGIOSO)
+            var tipos = new Array("TEORETICO", "ECONOMICO", "ESTETICO", "SOCIAL", "POLITICO", "RELIGIOSO")
+
+            var f;
+            //var vec = new Array(10, 11, 9, 33, 44, 32, 1 )
+            vec.sort(function (v1, v2) {
+
+                return v1 - v2;
+
+            });
+
+            vec.reverse();
+            // document.write('Vector ordenado en forma descendente<br>');
+            for (f = 0; f < vec.length; f++) {
+                ORDENADO2 = ORDENADO2 + vec[f] + ', ';
+            }
+
+            ORDEN2.innerHTML = ORDENADO2;
+
+            totalGlobal.innerHTML = totalEnElTest;
+        }
+
+    </script>
+
+</body>
+
 </html>
